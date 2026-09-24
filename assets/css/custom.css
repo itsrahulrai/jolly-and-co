@@ -529,28 +529,49 @@ img { max-width: 100%; height: auto; }
 }
 
 /* ==============================================================
-   Reduced Spacing: Our Services Section Top Space
+   Reduced Spacing: Sections Vertical Spacing
    ============================================================== */
 .services-one {
   padding-top: 55px !important;
+  padding-bottom: 50px !important;
 }
 
 .features-three {
   padding-bottom: 50px !important;
 }
 
+.testimonials-one {
+  padding-top: 50px !important;
+}
+
 @media (max-width: 767px) {
   .services-one {
     padding-top: 40px !important;
+    padding-bottom: 35px !important;
   }
   .features-three {
     padding-bottom: 35px !important;
+  }
+  .testimonials-one {
+    padding-top: 35px !important;
   }
 }
 
 /* ==============================================================
    FAQ & Blog Cards: Equal Height & Spacing Between Cards
    ============================================================== */
+.faq-one__blogs-header {
+  margin-bottom: 24px !important;
+}
+.faq-one__blogs-header .sec-title__top {
+  margin-bottom: 12px !important;
+}
+.faq-one__blogs-header .sec-title__title {
+  font-size: 32px !important;
+  line-height: 1.25 !important;
+  margin: 0 !important;
+}
+
 @media (min-width: 992px) {
   .faq-one .row {
     align-items: stretch !important;
@@ -576,11 +597,11 @@ img { max-width: 100%; height: auto; }
     flex-direction: column !important;
   }
   .faq-one__blogs {
-    height: 100% !important;
+    flex: 1 1 auto !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-between !important;
-    gap: 22px !important;
+    gap: 20px !important;
   }
   .faq-one__blogs .blog-card-two {
     flex: 1 1 0 !important;
@@ -590,7 +611,7 @@ img { max-width: 100%; height: auto; }
 
 /* Base styles for blog-card-two */
 .faq-one__blogs .blog-card-two {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   border-radius: 14px !important;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05) !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease !important;
@@ -604,6 +625,111 @@ img { max-width: 100%; height: auto; }
   transform: translateY(-4px) !important;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09) !important;
 }
+
+/* ==============================================================
+   FAQ Answers: Text-Only Full-Width Layout (No Image)
+   ============================================================== */
+.faq-accordion .accordion-content .inner {
+  display: block !important;
+  grid-template-columns: none !important;
+  padding: 16px 22px 18px 22px !important;
+}
+
+.faq-accordion .accordion-content .inner p {
+  margin: 0 !important;
+  font-size: 14.5px !important;
+  line-height: 1.65 !important;
+  color: #4a5568 !important;
+  font-weight: 400 !important;
+}
+
+/* ==============================================================
+   Testimonial Image: Cover & Sharp Circular Fit
+   ============================================================== */
+.testimonials-one__item__image img {
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  background-color: #f7faf9 !important;
+}
+
+/* ==============================================================
+   Funfact Two: Better Background & Removed Extra Top/Bottom Space
+   ============================================================== */
+.testimonials-one {
+  padding-bottom: 45px !important;
+}
+
+.funfact.funfact--two {
+  background: #6BCB12 !important;
+  background: linear-gradient(135deg, #6BCB12 0%, #58b00a 100%) !important;
+  padding-top: 45px !important;
+  padding-bottom: 45px !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.funfact--two .funfact__bg {
+  display: none !important;
+}
+
+.funfact--two .funfact__item {
+  padding: 26px 22px 26px 0px !important;
+}
+
+.funfact--two .funfact__item__shape {
+  height: 100% !important;
+  border-radius: 16px !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12) !important;
+}
+
+.funfact--two .funfact__item__icon-box::before {
+  border-color: transparent transparent transparent #004d3f !important;
+}
+
+.funfact--two .funfact__item__icon-box::after {
+  border-color: #004d3f transparent transparent transparent !important;
+}
+
+.funfact--two .funfact__item__icon {
+  background-color: #004d3f !important;
+  color: #ffffff !important;
+}
+
+.funfact--two .funfact__item__count {
+  font-size: 38px !important;
+  font-weight: 700 !important;
+  color: #1a2730 !important;
+  margin-bottom: 4px !important;
+  line-height: 1.15 !important;
+}
+
+.funfact--two .funfact__item__title {
+  font-size: 15px !important;
+  color: #555555 !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+}
+
+.faq-one {
+  padding-top: 45px !important;
+}
+
+@media (max-width: 767px) {
+  .testimonials-one {
+    padding-bottom: 30px !important;
+  }
+  .funfact.funfact--two {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+  .faq-one {
+    padding-top: 35px !important;
+  }
+}
+
+
+
 
 
 

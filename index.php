@@ -257,8 +257,203 @@ include __DIR__ . '/includes/slider.php';
     </div>
 </section>
 
+<section class="testimonials-one section-space">
+    <div class="container">
+      <div class="sec-title sec-title--center">
+    <div class="sec-title__top" style='--tagline-bg: #ECF5F4' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+        <img src="assets/images/shapes/sec-title-shape-1-1.png" alt="shape" class="sec-title__shape">
+        <p class="sec-title__tagline">Testimonials</p>
+    </div>
+    <h2 class="sec-title__title bw-split-in-up" style='--title-color: #000000'>
+       Trusted by Clients Committed to Success
+    </h2>
+</div>
+
+        <div class="testimonials-one__wrapper" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
+            <div class="testimonials-one__carousel findox-owl__carousel--with-counter findox-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+                "items": 1,
+                "margin": 30,
+                "autoplay": true,
+                "loop": true,
+                "smartSpeed": 700,
+                "nav": true,
+                "dots": false,
+                "navText": ["<i class=\"icon-arrow-left\"></i>","<i class=\"icon-arrow-right\"></i>"]
+            }'>
+                <div class="testimonials-one__item">
+                    <div class="testimonials-one__item__image">
+                        <img src="assets/images/testimonals/testimonial-man.png" alt="Rajesh Sharma">
+                        <div class="findox-ratings">
+                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="testimonials-one__item__content">
+                        <svg class="testimonials-one__item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 66" fill="none">
+                            <path d="M60.7549 6.17188C64.6411 5.66516 66.5008 7.52302 66.501 10.0576C66.501 13.2688 61.5986 15.634 59.2334 17.1553C51.6291 21.7181 46.8975 25.9432 46.8975 29.1533C46.8977 31.5194 50.6158 31.5189 52.3057 31.6875C60.4167 32.3639 65.6551 41.1506 65.6562 48.7549C65.6562 58.7254 57.3754 65.9921 47.7441 65.9922C35.7455 65.9922 28.3105 55.0075 28.3105 44.0234C28.3106 33.2093 35.7452 22.2256 43.6875 15.6348C51.2907 9.21358 57.037 6.67865 60.7549 6.17188Z" />
+                            <path d="M32.4443 0.0839844C36.3306 -0.422735 38.1903 1.43513 38.1904 3.96973C38.1904 7.18088 33.2901 9.54609 30.9238 11.0674C23.3195 15.6302 18.5889 19.8554 18.5889 23.0654C18.5891 25.4314 22.3062 25.4311 23.9961 25.5996C25.639 25.7362 27.1619 26.2111 28.5498 26.9365C25.6875 32.1352 23.7433 37.9893 23.7422 44.0254C23.7422 48.9135 25.0048 53.8654 27.3721 58.1455C24.9579 59.2774 22.2542 59.9052 19.4336 59.9053C7.43498 59.9053 0 48.9206 0 37.9365C0.000139867 27.1213 7.43572 16.1377 15.377 9.54688C22.9802 3.12568 28.7264 0.590755 32.4443 0.0839844Z" />
+                        </svg>
+
+                        <p class="testimonials-one__item__quote">
+                            Jolly & Co. has been managing our corporate tax filing, statutory audits, and GST compliance for over five years. Their proactive advice on <span>tax planning & ROC compliance</span> has saved us substantial costs while keeping our company 100% compliant with regulatory standards.
+                        </p>
+
+                        <div class="testimonials-one__item__identity">
+                            <h4 class="testimonials-one__item__name">Rajesh Sharma</h4>
+                            <p class="testimonials-one__item__designation">Director, Apex Logistics Pvt. Ltd., New Delhi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials-one__item">
+                    <div class="testimonials-one__item__image">
+                        <img src="assets/images/testimonals/testimonial-woman.png" alt="Pooja Agarwal">
+                        <div class="findox-ratings">
+                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="testimonials-one__item__content">
+                        <svg class="testimonials-one__item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 66" fill="none">
+                            <path d="M60.7549 6.17188C64.6411 5.66516 66.5008 7.52302 66.501 10.0576C66.501 13.2688 61.5986 15.634 59.2334 17.1553C51.6291 21.7181 46.8975 25.9432 46.8975 29.1533C46.8977 31.5194 50.6158 31.5189 52.3057 31.6875C60.4167 32.3639 65.6551 41.1506 65.6562 48.7549C65.6562 58.7254 57.3754 65.9921 47.7441 65.9922C35.7455 65.9922 28.3105 55.0075 28.3105 44.0234C28.3106 33.2093 35.7452 22.2256 43.6875 15.6348C51.2907 9.21358 57.037 6.67865 60.7549 6.17188Z" />
+                            <path d="M32.4443 0.0839844C36.3306 -0.422735 38.1903 1.43513 38.1904 3.96973C38.1904 7.18088 33.2901 9.54609 30.9238 11.0674C23.3195 15.6302 18.5889 19.8554 18.5889 23.0654C18.5891 25.4314 22.3062 25.4311 23.9961 25.5996C25.639 25.7362 27.1619 26.2111 28.5498 26.9365C25.6875 32.1352 23.7433 37.9893 23.7422 44.0254C23.7422 48.9135 25.0048 53.8654 27.3721 58.1455C24.9579 59.2774 22.2542 59.9052 19.4336 59.9053C7.43498 59.9053 0 48.9206 0 37.9365C0.000139867 27.1213 7.43572 16.1377 15.377 9.54688C22.9802 3.12568 28.7264 0.590755 32.4443 0.0839844Z" />
+                        </svg>
+
+                        <p class="testimonials-one__item__quote">
+                            As a fast-growing startup, managing bookkeeping, monthly TDS, and GST returns was daunting. The team at Jolly & Co. took complete ownership of our accounts. Their expertise in <span>startup financial advisory</span> and direct access to senior partners made all the difference.
+                        </p>
+
+                        <div class="testimonials-one__item__identity">
+                            <h4 class="testimonials-one__item__name">Pooja Agarwal</h4>
+                            <p class="testimonials-one__item__designation">Co-Founder, GreenRoots Retail, Kalkaji</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials-one__item">
+                    <div class="testimonials-one__item__image">
+                        <img src="assets/images/testimonals/testimonial-man.png" alt="Vikram Malhotra">
+                        <div class="findox-ratings">
+                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="testimonials-one__item__content">
+                        <svg class="testimonials-one__item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 66" fill="none">
+                            <path d="M60.7549 6.17188C64.6411 5.66516 66.5008 7.52302 66.501 10.0576C66.501 13.2688 61.5986 15.634 59.2334 17.1553C51.6291 21.7181 46.8975 25.9432 46.8975 29.1533C46.8977 31.5194 50.6158 31.5189 52.3057 31.6875C60.4167 32.3639 65.6551 41.1506 65.6562 48.7549C65.6562 58.7254 57.3754 65.9921 47.7441 65.9922C35.7455 65.9922 28.3105 55.0075 28.3105 44.0234C28.3106 33.2093 35.7452 22.2256 43.6875 15.6348C51.2907 9.21358 57.037 6.67865 60.7549 6.17188Z" />
+                            <path d="M32.4443 0.0839844C36.3306 -0.422735 38.1903 1.43513 38.1904 3.96973C38.1904 7.18088 33.2901 9.54609 30.9238 11.0674C23.3195 15.6302 18.5889 19.8554 18.5889 23.0654C18.5891 25.4314 22.3062 25.4311 23.9961 25.5996C25.639 25.7362 27.1619 26.2111 28.5498 26.9365C25.6875 32.1352 23.7433 37.9893 23.7422 44.0254C23.7422 48.9135 25.0048 53.8654 27.3721 58.1455C24.9579 59.2774 22.2542 59.9052 19.4336 59.9053C7.43498 59.9053 0 48.9206 0 37.9365C0.000139867 27.1213 7.43572 16.1377 15.377 9.54688C22.9802 3.12568 28.7264 0.590755 32.4443 0.0839844Z" />
+                        </svg>
+
+                        <p class="testimonials-one__item__quote">
+                            When I received a complex scrutiny assessment notice from the Income Tax Department, Jolly & Co. handled the matter with exceptional professionalism. They drafted a meticulous, legally sound reply and <span>resolved the assessment smoothly</span> without any penalty.
+                        </p>
+
+                        <div class="testimonials-one__item__identity">
+                            <h4 class="testimonials-one__item__name">Vikram Malhotra</h4>
+                            <p class="testimonials-one__item__designation">Senior Financial Consultant & Investor, New Delhi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials-one__shape-1">
+                <img src="assets/images/shapes/testimonials-shape-1-1.png" alt="shape">
+            </div>
+            <img src="assets/images/shapes/testimonials-shape-1-2.png" alt="shape" class="testimonials-one__shape-2">
+        </div>
+    </div>
+</section>
+
+<section class="funfact funfact--two" style="background: linear-gradient(135deg, #6BCB12 0%, #58b00a 100%);">
+    <div class="container">
+        <div class="row gutter-y-30">
+
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="100">
+                <div class="funfact__item">
+                    <div class="funfact__item__shape"></div>
+                    <div class="funfact__item__icon-box">
+                        <span class="funfact__item__icon"><i class="icon-folder"></i></span>
+                    </div>
+                    <div class="funfact__item__content">
+                        <h3 class="funfact__item__count count-box">
+                            <span class="count-text" data-stop="285" data-speed="1500">0</span><span>k+</span>
+                        </h3>
+                        <p class="funfact__item__title">Projects Succefull</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="200">
+                <div class="funfact__item">
+                    <div class="funfact__item__shape"></div>
+                    <div class="funfact__item__icon-box">
+                        <span class="funfact__item__icon"><i class="icon-satisfaction"></i></span>
+                    </div>
+                    <div class="funfact__item__content">
+                        <h3 class="funfact__item__count count-box">
+                            <span class="count-text" data-stop="83" data-speed="1500">0</span><span>k+</span>
+                        </h3>
+                        <p class="funfact__item__title">Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="300">
+                <div class="funfact__item">
+                    <div class="funfact__item__shape"></div>
+                    <div class="funfact__item__icon-box">
+                        <span class="funfact__item__icon"><i class="icon-technical-team"></i></span>
+                    </div>
+                    <div class="funfact__item__content">
+                        <h3 class="funfact__item__count count-box">
+                            <span class="count-text" data-stop="195" data-speed="1500">0</span><span>k+</span>
+                        </h3>
+                        <p class="funfact__item__title">Team Support</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="400">
+                <div class="funfact__item">
+                    <div class="funfact__item__shape"></div>
+                    <div class="funfact__item__icon-box">
+                        <span class="funfact__item__icon"><i class="icon-trophy"></i></span>
+                    </div>
+                    <div class="funfact__item__content">
+                        <h3 class="funfact__item__count count-box">
+                            <span class="count-text" data-stop="366" data-speed="1500">0</span><span>+</span>
+                        </h3>
+                        <p class="funfact__item__title">Awards Winning</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <section class="faq-one section-space">
     <div class="container">
+        <div class="sec-title sec-title--center" style="margin-bottom: 45px;">
+            <div class="sec-title__top" style="--tagline-bg: #ECF5F4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+                <img src="assets/images/shapes/sec-title-shape-1-1.png" alt="shape" class="sec-title__shape">
+                <p class="sec-title__tagline">FAQ &amp; Blogs</p>
+            </div>
+            <h2 class="sec-title__title bw-split-in-up" style="--title-color: #000000">Frequently Asked Questions &amp; Latest Blogs</h2>
+        </div>
+
         <div class="row gutter-y-40 align-items-stretch">
             <div class="col-lg-5">
                 <div class="faq-one__image">
@@ -275,37 +470,34 @@ include __DIR__ . '/includes/slider.php';
                             <div class="faq-accordion findox-accordion" data-grp-name="findox-accordion">
                                 <div class="accordion" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
                                     <div class="accordion-title">
-                                        <h4><span class="accordion-title__number"></span> What are main branches of finance?</h4>
+                                        <h4><span class="accordion-title__number"></span> What accounting & tax services do you offer?</h4>
                                         <span class="accordion-title__icon"></span>
                                     </div>
                                     <div class="accordion-content">
                                         <div class="inner">
-                                            <img src="assets/images/resources/faq-item-1.jpg" alt="faq">
-                                            <p>Get customized security solutions tailored to your industry’s unique risks and compliance requirements.</p>
+                                            <p>We handle bookkeeping, financial statement preparation, statutory & tax audits, income tax return filing, GST compliance, TDS management, and company registration.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion active" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
                                     <div class="accordion-title">
-                                        <h4><span class="accordion-title__number"></span> Should I pay off debt or invest first?</h4>
+                                        <h4><span class="accordion-title__number"></span> Should I choose the old or new tax regime?</h4>
                                         <span class="accordion-title__icon"></span>
                                     </div>
                                     <div class="accordion-content">
                                         <div class="inner">
-                                            <img src="assets/images/resources/faq-item-2.jpg" alt="faq">
-                                            <p>Finance is the management of money and includes activities like investing borrowing.</p>
+                                            <p>It depends on your deductions (80C, 80D, home loan interest, HRA). We run a comparative tax calculation to determine which regime minimizes your overall tax liability.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
                                     <div class="accordion-title">
-                                        <h4><span class="accordion-title__number"></span> What is finance capital budgeting?</h4>
+                                        <h4><span class="accordion-title__number"></span> What is the process for business advisory & planning?</h4>
                                         <span class="accordion-title__icon"></span>
                                     </div>
                                     <div class="accordion-content">
                                         <div class="inner">
-                                            <img src="assets/images/resources/faq-item-3.jpg" alt="faq">
-                                            <p>We offer comprehensive threat detection, risk assessment, and response strategies to safeguard.</p>
+                                            <p>We analyze your cash flow, profit margins, capital budgeting, and statutory obligations to provide actionable strategies for tax efficiency and sustainable growth.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -316,20 +508,18 @@ include __DIR__ . '/includes/slider.php';
                                     </div>
                                     <div class="accordion-content">
                                         <div class="inner">
-                                            <img src="assets/images/resources/faq-item-4.jpg" alt="faq">
-                                            <p>PAN, Aadhaar, bank statements, sales/purchase registers and Form 26AS. We provide a quick custom checklist.</p>
+                                            <p>Basic KYC (PAN, Aadhaar), annual bank statements, sales/purchase registers, Form 26AS/AIS, and investment proofs. We provide a customized checklist for your profile.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
                                     <div class="accordion-title">
-                                        <h4><span class="accordion-title__number"></span> How do you handle tax notices from department?</h4>
+                                        <h4><span class="accordion-title__number"></span> How do you handle tax notices from the department?</h4>
                                         <span class="accordion-title__icon"></span>
                                     </div>
                                     <div class="accordion-content">
                                         <div class="inner">
-                                            <img src="assets/images/resources/faq-item-5.jpg" alt="faq">
-                                            <p>Share your notice with us; our CAs review it, draft a comprehensive response and submit it well before due date.</p>
+                                            <p>Share the notice with us; our chartered accountants review the assessment, prepare a legally sound and backed response, and file it before the statutory deadline.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -340,133 +530,123 @@ include __DIR__ . '/includes/slider.php';
                 </div>
             </div>
            <div class="col-lg-7">
-    <div class="faq-one__blogs">
+               <div class="faq-one__blogs">
 
-        <div class="blog-card-two">
-            <div class="blog-card-two__image" style="background-image: url(assets/images/blog/blog-2-1.jpg)">
-                <div class="blog-card-two__date">
-                    <span class="blog-card-two__date__day">22</span>
-                    <span class="blog-card-two__date__month">Apr</span>
+                <div class="blog-card-two">
+                    <div class="blog-card-two__image" style="background-image: url(assets/images/blog/blog-2-1.jpg)">
+                        <div class="blog-card-two__date">
+                            <span class="blog-card-two__date__day">22</span>
+                            <span class="blog-card-two__date__month">Apr</span>
+                        </div>
+                        <a href="blogs.php" class="blog-card-two__image__link">
+                            <span class="sr-only">Smart Financial Planning for Business Growth.</span>
+                        </a>
+                    </div>
+
+                    <div class="blog-card-two__content">
+                        <a href="blogs.php" class="blog-card-two__category">Finance</a>
+                        <ul class="blog-card-two__meta list-unstyled">
+                            <li>
+                                <span class="blog-card-two__meta__icon"><i class="icon-user"></i></span>
+                                <span>By: <a href="blogs.php">Admin</a></span>
+                            </li>
+                            <li>
+                                <span class="blog-card-two__meta__icon"><i class="icon-comment"></i></span>
+                                <a href="blogs.php">Comments (3)</a>
+                            </li>
+                        </ul>
+                        <h3 class="blog-card-two__title">
+                            <a href="blogs.php">Smart Financial Planning for Business Growth.</a>
+                        </h3>
+                        <a href="blogs.php" class="findox-btn findox-btn--base">
+                            <span class="findox-btn__text">Learn More</span>
+                            <span class="findox-btn__icon-box">
+                                <span class="findox-btn__icon">
+                                    <i class="icon-arrow-right-up"></i>
+                                    <i class="icon-arrow-right-up"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
                 </div>
-                <a href="blog-details-right.php" class="blog-card-two__image__link">
-                    <span class="sr-only">Smart Financial Planning for Business Growth.</span>
-                </a>
-            </div>
 
-            <div class="blog-card-two__content">
-                <a href="blog-details-right.php" class="blog-card-two__category">Finance</a>
-                <ul class="blog-card-two__meta list-unstyled">
-                    <li>
-                        <span class="blog-card-two__meta__icon"><i class="icon-user"></i></span>
-                        <span>By: <a href="blog-details-right.php">Admin</a></span>
-                    </li>
-                    <li>
-                        <span class="blog-card-two__meta__icon"><i class="icon-comment"></i></span>
-                        <a href="blog-details-right.php">Comments (3)</a>
-                    </li>
-                </ul>
-                <h3 class="blog-card-two__title">
-                    <a href="blog-details-right.php">Smart Financial Planning for Business Growth.</a>
-                </h3>
-                <a href="blog-details-right.php" class="findox-btn findox-btn--base">
-                    <span class="findox-btn__text">Learn More</span>
-                    <span class="findox-btn__icon-box">
-                        <span class="findox-btn__icon">
-                            <i class="icon-arrow-right-up"></i>
-                            <i class="icon-arrow-right-up"></i>
-                        </span>
-                    </span>
-                </a>
-            </div>
+                <div class="blog-card-two">
+                    <div class="blog-card-two__image" style="background-image: url(assets/images/blog/blog-2-2.jpg)">
+                        <div class="blog-card-two__date">
+                            <span class="blog-card-two__date__day">15</span>
+                            <span class="blog-card-two__date__month">Apr</span>
+                        </div>
+                        <a href="blogs.php" class="blog-card-two__image__link">
+                            <span class="sr-only">Important Tax Tips Every Business Should Know.</span>
+                        </a>
+                    </div>
 
-            <img src="assets/images/shapes/blog-card-shape-2-1.png" alt="shape" class="blog-card-two__shape">
-            <img src="assets/images/shapes/blog-card-shape-2-1-hover.png" alt="shape" class="blog-card-two__shape blog-card-two__shape--hover">
-        </div>
-
-        <div class="blog-card-two">
-            <div class="blog-card-two__image" style="background-image: url(assets/images/blog/blog-2-2.jpg)">
-                <div class="blog-card-two__date">
-                    <span class="blog-card-two__date__day">15</span>
-                    <span class="blog-card-two__date__month">Apr</span>
+                    <div class="blog-card-two__content">
+                        <a href="blogs.php" class="blog-card-two__category">Taxation</a>
+                        <ul class="blog-card-two__meta list-unstyled">
+                            <li>
+                                <span class="blog-card-two__meta__icon"><i class="icon-user"></i></span>
+                                <span>By: <a href="blogs.php">Admin</a></span>
+                            </li>
+                            <li>
+                                <span class="blog-card-two__meta__icon"><i class="icon-comment"></i></span>
+                                <a href="blogs.php">Comments (2)</a>
+                            </li>
+                        </ul>
+                        <h3 class="blog-card-two__title">
+                            <a href="blogs.php">Important Tax Tips Every Business Should Know.</a>
+                        </h3>
+                        <a href="blogs.php" class="findox-btn findox-btn--base">
+                            <span class="findox-btn__text">Learn More</span>
+                            <span class="findox-btn__icon-box">
+                                <span class="findox-btn__icon">
+                                    <i class="icon-arrow-right-up"></i>
+                                    <i class="icon-arrow-right-up"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
                 </div>
-                <a href="blog-details-right.php" class="blog-card-two__image__link">
-                    <span class="sr-only">Important Tax Tips Every Business Should Know.</span>
-                </a>
-            </div>
 
-            <div class="blog-card-two__content">
-                <a href="blog-details-right.php" class="blog-card-two__category">Taxation</a>
-                <ul class="blog-card-two__meta list-unstyled">
-                    <li>
-                        <span class="blog-card-two__meta__icon"><i class="icon-user"></i></span>
-                        <span>By: <a href="blog-details-right.php">Admin</a></span>
-                    </li>
-                    <li>
-                        <span class="blog-card-two__meta__icon"><i class="icon-comment"></i></span>
-                        <a href="blog-details-right.php">Comments (2)</a>
-                    </li>
-                </ul>
-                <h3 class="blog-card-two__title">
-                    <a href="blog-details-right.php">Important Tax Tips Every Business Should Know.</a>
-                </h3>
-                <a href="blog-details-right.php" class="findox-btn findox-btn--base">
-                    <span class="findox-btn__text">Learn More</span>
-                    <span class="findox-btn__icon-box">
-                        <span class="findox-btn__icon">
-                            <i class="icon-arrow-right-up"></i>
-                            <i class="icon-arrow-right-up"></i>
-                        </span>
-                    </span>
-                </a>
-            </div>
+                <div class="blog-card-two">
+                    <div class="blog-card-two__image" style="background-image: url(assets/images/blog/blog-2-3.jpg)">
+                        <div class="blog-card-two__date">
+                            <span class="blog-card-two__date__day">08</span>
+                            <span class="blog-card-two__date__month">Apr</span>
+                        </div>
+                        <a href="blogs.php" class="blog-card-two__image__link">
+                            <span class="sr-only">Why Accurate Accounting Matters for Your Business.</span>
+                        </a>
+                    </div>
 
-            <img src="assets/images/shapes/blog-card-shape-2-1.png" alt="shape" class="blog-card-two__shape">
-            <img src="assets/images/shapes/blog-card-shape-2-1-hover.png" alt="shape" class="blog-card-two__shape blog-card-two__shape--hover">
-        </div>
-
-        <div class="blog-card-two">
-            <div class="blog-card-two__image" style="background-image: url(assets/images/blog/blog-2-3.jpg)">
-                <div class="blog-card-two__date">
-                    <span class="blog-card-two__date__day">08</span>
-                    <span class="blog-card-two__date__month">Apr</span>
+                    <div class="blog-card-two__content">
+                        <a href="blogs.php" class="blog-card-two__category">Accounting</a>
+                        <ul class="blog-card-two__meta list-unstyled">
+                            <li>
+                                <span class="blog-card-two__meta__icon"><i class="icon-user"></i></span>
+                                <span>By: <a href="blogs.php">Admin</a></span>
+                            </li>
+                            <li>
+                                <span class="blog-card-two__meta__icon"><i class="icon-comment"></i></span>
+                                <a href="blogs.php">Comments (4)</a>
+                            </li>
+                        </ul>
+                        <h3 class="blog-card-two__title">
+                            <a href="blogs.php">Why Accurate Accounting Matters for Your Business.</a>
+                        </h3>
+                        <a href="blogs.php" class="findox-btn findox-btn--base">
+                            <span class="findox-btn__text">Learn More</span>
+                            <span class="findox-btn__icon-box">
+                                <span class="findox-btn__icon">
+                                    <i class="icon-arrow-right-up"></i>
+                                    <i class="icon-arrow-right-up"></i>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
                 </div>
-                <a href="blog-details-right.php" class="blog-card-two__image__link">
-                    <span class="sr-only">Why Accurate Accounting Matters for Your Business.</span>
-                </a>
             </div>
-
-            <div class="blog-card-two__content">
-                <a href="blog-details-right.php" class="blog-card-two__category">Accounting</a>
-                <ul class="blog-card-two__meta list-unstyled">
-                    <li>
-                        <span class="blog-card-two__meta__icon"><i class="icon-user"></i></span>
-                        <span>By: <a href="blog-details-right.php">Admin</a></span>
-                    </li>
-                    <li>
-                        <span class="blog-card-two__meta__icon"><i class="icon-comment"></i></span>
-                        <a href="blog-details-right.php">Comments (4)</a>
-                    </li>
-                </ul>
-                <h3 class="blog-card-two__title">
-                    <a href="blog-details-right.php">Why Accurate Accounting Matters for Your Business.</a>
-                </h3>
-                <a href="blog-details-right.php" class="findox-btn findox-btn--base">
-                    <span class="findox-btn__text">Learn More</span>
-                    <span class="findox-btn__icon-box">
-                        <span class="findox-btn__icon">
-                            <i class="icon-arrow-right-up"></i>
-                            <i class="icon-arrow-right-up"></i>
-                        </span>
-                    </span>
-                </a>
-            </div>
-
-            <img src="assets/images/shapes/blog-card-shape-2-1.png" alt="shape" class="blog-card-two__shape">
-            <img src="assets/images/shapes/blog-card-shape-2-1-hover.png" alt="shape" class="blog-card-two__shape blog-card-two__shape--hover">
         </div>
-
-    </div>
-</div>
         </div>
     </div>
 </section>
