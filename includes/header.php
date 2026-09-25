@@ -96,6 +96,7 @@ $schema = [
     <link rel="stylesheet" href="assets/css/findox.css" />
     <!-- site overrides (WhatsApp button, extra responsive rules) -->
     <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/service-pages.css" />
     <?php if (!empty($extra_css)): ?>
         <?= $extra_css ?>
     <?php endif; ?>
@@ -152,12 +153,15 @@ $schema = [
                         <ul class="main-menu__list">
                             <li class="<?= $current === 'home' ? 'current' : '' ?>"><a href="index.php">Home</a></li>
                             <li class="<?= $current === 'about' ? 'current' : '' ?>"><a href="about.php">About</a></li>
-                            <li class="dropdown <?= $current === 'services' ? 'current' : '' ?>">
+                            <li class="dropdown <?= ($current === 'services' || strpos($current, 'service') === 0) ? 'current' : '' ?>">
                                 <a href="services.php">Services</a>
                                 <ul>
-                                    <?php foreach ($services as $s): ?>
-                                        <li><a href="services.php#<?= e($s['slug']) ?>"><?= e($s['title']) ?></a></li>
-                                    <?php endforeach; ?>
+                                    <li><a href="service-accounting-bookkeeping.php">Accounting &amp; Bookkeeping</a></li>
+                                    <li><a href="service-income-tax-gst.php">Income Tax &amp; GST</a></li>
+                                    <li><a href="service-audit-assurance.php">Audit &amp; Assurance</a></li>
+                                    <li><a href="service-business-advisory.php">Business Advisory</a></li>
+                                    <li><a href="service-compliance-services.php">Compliance Services</a></li>
+                                    <li><a href="service-startup-registration.php">Startup &amp; Company Registration</a></li>
                                 </ul>
                             </li>
                             <li class="<?= $current === 'blogs' ? 'current' : '' ?>"><a href="blogs.php">Blogs</a></li>

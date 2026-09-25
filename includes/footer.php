@@ -3,99 +3,172 @@
 require_once __DIR__ . '/../config.php';
 $waHello = whatsapp_link('Hello ' . $site['name'] . ', I would like to know more about your services.');
 ?>
-        <footer class="main-footer main-footer--two">
+        <footer class="main-footer main-footer--modern">
+            <!-- Top Newsletter / CTA Ribbon -->
             <div class="main-footer__top">
                 <div class="container">
-                    <div class="main-footer__newsletter" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
-                        <div class="row gutter-y-30 align-items-center">
-                            <div class="col-xl-7">
-                                <div class="main-footer__newsletter__content">
-                                    <div class="main-footer__logo">
-                                        <a href="index.php">
-                                            <img src="assets/images/jolly.png" width="225" alt="<?= e($site['name']) ?> logo">
-                                        </a>
+                    <div class="footer-cta-ribbon" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">
+                        <div class="footer-cta-ribbon__wave"></div>
+
+                        <div class="footer-cta-ribbon__inner">
+                            <!-- Left: Heading -->
+                            <div class="footer-cta-ribbon__heading-box">
+                                <h3 class="footer-cta-ribbon__title">
+                                    Need Help With <span class="footer-cta-ribbon__highlight">Accounts</span> Or <span class="footer-cta-ribbon__highlight">Tax Filing?</span>
+                                </h3>
+                            </div>
+
+                            <!-- Center: 3 Trust Highlights -->
+                            <div class="footer-cta-ribbon__trust">
+                                <div class="footer-cta-ribbon__trust-divider"></div>
+                                <div class="footer-cta-ribbon__trust-item">
+                                    <div class="footer-cta-ribbon__trust-icon">
+                                        <i class="far fa-comment-dots"></i>
                                     </div>
-                                    <h3 class="main-footer__newsletter__title">Need help with accounts <br> or tax filing?</h3>
+                                    <span class="footer-cta-ribbon__trust-text">Quick<br>Response</span>
+                                </div>
+                                <div class="footer-cta-ribbon__trust-item">
+                                    <div class="footer-cta-ribbon__trust-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <span class="footer-cta-ribbon__trust-text">Expert<br>Guidance</span>
+                                </div>
+                                <div class="footer-cta-ribbon__trust-item">
+                                    <div class="footer-cta-ribbon__trust-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <span class="footer-cta-ribbon__trust-text">Trusted<br>CA Support</span>
                                 </div>
                             </div>
-                            <div class="col-xl-5">
-                                <div class="footer-cta__buttons">
-                                    <a href="<?= e($waHello) ?>" target="_blank" rel="noopener" class="findox-btn">
-                                        <span class="findox-btn__text"><i class="fab fa-whatsapp"></i> CHAT ON WHATSAPP</span>
-                                    </a>
-                                    <a href="contact.php" class="findox-btn findox-btn--white">
-                                        <span class="findox-btn__text">SEND ENQUIRY</span>
-                                    </a>
-                                </div>
+
+                            <!-- Right: 2 Action Buttons -->
+                            <div class="footer-cta-ribbon__actions">
+                                <a href="<?= e($waHello) ?>" target="_blank" rel="noopener" class="footer-cta-ribbon__btn footer-cta-ribbon__btn--whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>CHAT ON WHATSAPP</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="contact.php" class="footer-cta-ribbon__btn footer-cta-ribbon__btn--enquiry">
+                                    <i class="far fa-envelope"></i>
+                                    <span>SEND ENQUIRY</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container">
-                    <div class="row gutter-y-40">
-                        <div class="col-xl-3 col-lg-5 col-md-7" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="100">
+
+                <!-- Main 4-Column Footer Body -->
+                <div class="container footer-main-body">
+                    <div class="row">
+                        <!-- Col 1: About & Logo -->
+                        <div class="col-xl-3 col-lg-6 col-md-6 footer-col footer-col--brand" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
                             <div class="footer-widget footer-widget--about">
-                                <h2 class="footer-widget__title">About</h2>
+                                <div class="footer-widget__logo">
+                                    <a href="index.php">
+                                        <img src="assets/images/jolly.png" width="220" alt="<?= e($site['name']) ?> Logo">
+                                    </a>
+                                </div>
                                 <p class="footer-widget__text">
-                                    <?= e($site['full_name']) ?> is a chartered accountancy practice in <?= e($site['locality']) ?>, New Delhi, helping individuals, startups and growing businesses with accounts, tax, audit and compliance.
+                                    <?= e($site['full_name']) ?> is a trusted chartered accountancy practice in <?= e($site['locality']) ?>, New Delhi, helping individuals, startups and growing businesses with accounts, tax, audit and compliance.
                                 </p>
-                                <?php include __DIR__ . '/social.php'; ?>
+                                <div class="footer-social-links">
+                                    <?php include __DIR__ . '/social.php'; ?>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="200">
-                            <div class="footer-widget footer-widget--links footer-widget--links-1">
-                                <h2 class="footer-widget__title">Quick Links</h2>
-                                <ul class="list-unstyled footer-widget__links">
-                                    <li><a href="index.php">Home</a></li>
-                                    <li><a href="about.php">About Us</a></li>
-                                    <li><a href="services.php">Services</a></li>
-                                    <li><a href="blogs.php">Blogs</a></li>
-                                    <li><a href="contact.php">Contact</a></li>
-                                    <li><a href="<?= e(map_link()) ?>" target="_blank" rel="noopener">Find Us on Map</a></li>
+
+                        <!-- Col 2: Quick Links -->
+                        <div class="col-xl-3 col-lg-6 col-md-6 footer-col footer-col--links" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                            <div class="footer-widget">
+                                <h3 class="footer-widget__title">Quick Links</h3>
+                                <ul class="list-unstyled footer-links-list">
+                                    <li><a href="index.php"><span>Home</span> <i class="fas fa-chevron-right"></i></a></li>
+                                    <li><a href="about.php"><span>About Us</span> <i class="fas fa-chevron-right"></i></a></li>
+                                    <li><a href="services.php"><span>Services</span> <i class="fas fa-chevron-right"></i></a></li>
+                                    <li><a href="blogs.php"><span>Blogs</span> <i class="fas fa-chevron-right"></i></a></li>
+                                    <li><a href="contact.php"><span>Contact</span> <i class="fas fa-chevron-right"></i></a></li>
+                                    <li><a href="<?= e(map_link()) ?>" target="_blank" rel="noopener"><span>Find Us on Map</span> <i class="fas fa-chevron-right"></i></a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="300">
-                            <div class="footer-widget footer-widget--links footer-widget--links-2">
-                                <h2 class="footer-widget__title">Services</h2>
-                                <ul class="list-unstyled footer-widget__links">
+
+                        <!-- Col 3: Our Services -->
+                        <div class="col-xl-3 col-lg-6 col-md-6 footer-col footer-col--services" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+                            <div class="footer-widget">
+                                <h3 class="footer-widget__title">Our Services</h3>
+                                <ul class="list-unstyled footer-links-list">
                                     <?php foreach ($services as $s): ?>
-                                        <li><a href="services.php#<?= e($s['slug']) ?>"><?= e($s['title']) ?></a></li>
+                                        <li>
+                                            <a href="services.php#<?= e($s['slug']) ?>">
+                                                <span><?= e($s['title']) ?></span>
+                                                <i class="fas fa-chevron-right"></i>
+                                            </a>
+                                        </li>
                                     <?php endforeach; ?>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-6 col-md-7" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="400">
-                            <div class="footer-widget footer-widget--contact">
-                                <h2 class="footer-widget__title">Contact</h2>
-                                <ul class="footer-contact list-unstyled">
-                                    <li><i class="icon-location"></i><address><?= e($site['address']) ?></address></li>
-                                    <li><i class="icon-phone-call"></i><a href="tel:<?= e($site['phone_link']) ?>"><?= e($site['phone']) ?></a></li>
-                                    <li><i class="fas fa-envelope"></i><a href="mailto:<?= e($site['email']) ?>"><?= e($site['email']) ?></a></li>
-                                    <li><i class="far fa-clock"></i><span><?= e($site['hours']) ?></span></li>
+
+                        <!-- Col 4: Contact Us -->
+                        <div class="col-xl-3 col-lg-6 col-md-6 footer-col footer-col--contact" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+                            <div class="footer-widget">
+                                <h3 class="footer-widget__title">Contact Us</h3>
+                                <ul class="list-unstyled footer-contact-list">
+                                    <li>
+                                        <div class="footer-contact-list__icon"><i class="fas fa-map-marker-alt"></i></div>
+                                        <div class="footer-contact-list__info">
+                                            <address><?= e($site['address']) ?></address>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-contact-list__icon"><i class="fas fa-phone-alt"></i></div>
+                                        <div class="footer-contact-list__info">
+                                            <a href="tel:<?= e($site['phone_link']) ?>"><?= e($site['phone']) ?></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-contact-list__icon"><i class="fas fa-envelope"></i></div>
+                                        <div class="footer-contact-list__info">
+                                            <a href="mailto:<?= e($site['email']) ?>"><?= e($site['email']) ?></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="footer-contact-list__icon"><i class="far fa-clock"></i></div>
+                                        <div class="footer-contact-list__info">
+                                            <span><?= e($site['hours']) ?></span>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Bottom Copyright Bar -->
             <div class="main-footer__bottom">
                 <div class="container">
-                    <div class="main-footer__bottom__inner">
+                    <div class="main-footer__bottom-inner">
                         <p class="main-footer__copyright">
-                            &copy; Copyright <?= date('Y') ?> <?= e($site['full_name']) ?>. All rights reserved.
+                            &copy; <?= date('Y') ?> <?= e($site['full_name']) ?>. All Rights Reserved.
                         </p>
-                        <ul class="main-footer__page list-unstyled">
-                            <li><a href="about.php">About</a></li>
-                            <li><a href="services.php">Services</a></li>
-                            <li><a href="blogs.php">Blogs</a></li>
-                            <li><a href="contact.php">Contact Us</a></li>
-                        </ul>
+                        <div class="main-footer__legal">
+                            <a href="about.php">Privacy Policy</a>
+                            <span class="main-footer__legal-sep">|</span>
+                            <a href="about.php">Terms &amp; Conditions</a>
+                            <span class="main-footer__legal-sep">|</span>
+                            <a href="services.php">Sitemap</a>
+                        </div>
+                        <a href="#" data-target="html" class="footer-scroll-top scroll-to-target" aria-label="Scroll to top">
+                            <i class="fas fa-arrow-up"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <img src="assets/images/shapes/footer-shape-2-1.png" alt="" class="main-footer__shape-1">
-            <img src="assets/images/shapes/footer-shape-2-2.png" alt="" class="main-footer__shape-2">
+
+            <!-- Bottom-Left Decorative Wave Graphic -->
+            <div class="footer-corner-wave"></div>
         </footer>
 
 </div><!-- /.page-wrapper -->

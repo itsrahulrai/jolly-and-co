@@ -29,6 +29,7 @@ $site = [
         'twitter'   => 'https://x.com/',
         'linkedin'  => 'https://linkedin.com/',
         'instagram' => 'https://instagram.com/',
+        'youtube'   => 'https://youtube.com/',
     ],
 
     // ---- Site URL used for canonical / Open Graph. Leave '' to auto-detect. ----
@@ -46,14 +47,16 @@ $services = [
     [
         'slug'  => 'accounting-bookkeeping',
         'title' => 'Accounting & Bookkeeping',
+        'url'   => 'service-accounting-bookkeeping.php',
         'icon'  => 'icon-stats-2',
         'image' => 'assets/images/services/service-1-1.jpg',
         'short' => 'Accurate day-to-day books, bank reconciliation and monthly MIS so you always know where your business stands.',
         'points'=> ['Ledger & voucher maintenance', 'Bank & GST reconciliation', 'Monthly MIS & financial statements'],
     ],
     [
-        'slug'  => 'taxation',
+        'slug'  => 'income-tax-gst',
         'title' => 'Income Tax & GST',
+        'url'   => 'service-income-tax-gst.php',
         'icon'  => 'icon-agreement',
         'image' => 'assets/images/services/service-1-2.jpg',
         'short' => 'Timely return filing, notice replies and tax planning for individuals, firms and companies.',
@@ -62,6 +65,7 @@ $services = [
     [
         'slug'  => 'audit-assurance',
         'title' => 'Audit & Assurance',
+        'url'   => 'service-audit-assurance.php',
         'icon'  => 'icon-bank',
         'image' => 'assets/images/services/service-1-3.jpg',
         'short' => 'Statutory, tax and internal audits that strengthen controls and give stakeholders confidence.',
@@ -70,6 +74,7 @@ $services = [
     [
         'slug'  => 'business-advisory',
         'title' => 'Business Advisory',
+        'url'   => 'service-business-advisory.php',
         'icon'  => 'icon-approach',
         'image' => 'assets/images/services/service-1-4.jpg',
         'short' => 'Practical guidance on structuring, cash flow, budgeting and growth decisions.',
@@ -78,6 +83,7 @@ $services = [
     [
         'slug'  => 'compliance-services',
         'title' => 'Compliance Services',
+        'url'   => 'service-compliance-services.php',
         'icon'  => 'icon-support',
         'image' => 'assets/images/services/service-1-5.jpg',
         'short' => 'Stay on the right side of the law with ROC, TDS, PF/ESI and other statutory filings handled on time.',
@@ -86,6 +92,7 @@ $services = [
     [
         'slug'  => 'startup-registration',
         'title' => 'Startup & Company Registration',
+        'url'   => 'service-startup-registration.php',
         'icon'  => 'icon-financial-consultant',
         'image' => 'assets/images/services/service-1-6.jpg',
         'short' => 'Company, LLP and proprietorship set-up with PAN, GST, MSME/Udyam and Startup India support.',

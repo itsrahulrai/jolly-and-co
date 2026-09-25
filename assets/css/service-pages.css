@@ -1,0 +1,766 @@
+/* ==============================================================
+   Jolly & Co. — Service Pages Dedicated Stylesheet
+   Modern, High-Converting & Responsive CA Services Design
+   ============================================================== */
+
+/* ==============================================================
+   Page Header & Modern Breadcrumb (Compact, Clean & Responsive)
+   ============================================================== */
+.page-header {
+  position: relative !important;
+  margin-top: 0 !important;
+  padding-top: 44px !important;
+  padding-bottom: 42px !important;
+  background-color: #f7fafc !important;
+  background-image: linear-gradient(180deg, #fbfcfd 0%, #f1f5f9 100%) !important;
+  border-bottom: 1px solid #e5e9f0 !important;
+  overflow: hidden !important;
+}
+
+.page-header__bg {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  opacity: 0.25 !important;
+  pointer-events: none !important;
+}
+
+.page-header .container {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.page-header__content {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.page-header__title {
+  font-family: var(--findox-heading-font, "Sora", sans-serif) !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  color: #0b1a2b !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.5px !important;
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+  text-transform: none !important;
+}
+
+/* Modern Pill-Style Breadcrumb Bar */
+.findox-breadcrumb {
+  margin: 0 !important;
+  padding: 6px 18px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 50px !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03) !important;
+}
+
+.findox-breadcrumb li {
+  display: inline-flex !important;
+  align-items: center !important;
+  font-family: var(--findox-body-font, "Inter", sans-serif) !important;
+  font-size: 13.5px !important;
+  line-height: 1.4 !important;
+  color: #475569 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.findox-breadcrumb li::after {
+  display: none !important; /* override old findox slash */
+}
+
+.findox-breadcrumb li a {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  color: #334155 !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+}
+
+.findox-breadcrumb li a:hover {
+  color: #005a49 !important;
+  text-decoration: none !important;
+}
+
+.findox-breadcrumb li a i.fa-home {
+  color: #005a49 !important;
+  font-size: 12.5px !important;
+}
+
+.findox-breadcrumb__sep {
+  display: inline-flex !important;
+  align-items: center !important;
+  color: #94a3b8 !important;
+  font-size: 9px !important;
+}
+
+.findox-breadcrumb li.active,
+.findox-breadcrumb li.active span {
+  color: #005a49 !important;
+  font-weight: 600 !important;
+}
+
+/* Decorative subtle watermark on the far right */
+.page-header__shape {
+  position: absolute !important;
+  top: 50% !important;
+  right: 50px !important;
+  transform: translateY(-50%) !important;
+  width: 90px !important;
+  height: auto !important;
+  opacity: 0.18 !important;
+  pointer-events: none !important;
+  animation: none !important;
+  display: block !important;
+}
+
+.page-header__image {
+  display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .page-header {
+    padding-top: 36px !important;
+    padding-bottom: 34px !important;
+  }
+  .page-header__title {
+    font-size: 28px !important;
+  }
+  .page-header__shape {
+    display: none !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-header {
+    padding-top: 26px !important;
+    padding-bottom: 24px !important;
+  }
+  .page-header__title {
+    font-size: 22px !important;
+    margin-bottom: 8px !important;
+  }
+  .findox-breadcrumb {
+    padding: 5px 12px !important;
+    border-radius: 20px !important;
+    gap: 8px !important;
+  }
+  .findox-breadcrumb li {
+    font-size: 12px !important;
+  }
+}
+
+/* Page Background & Spacing */
+.service-details {
+  background-color: #fbfcfd !important;
+  padding-top: 48px !important;
+  padding-bottom: 75px !important;
+}
+
+/* Sidebar Container */
+.service-details__sidebar {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 110px !important;
+  z-index: 10 !important;
+}
+
+/* 1. All Services Navigation Box */
+.service-details__pages {
+  background: #ffffff !important;
+  border-radius: 20px !important;
+  padding: 28px 24px !important;
+  border: 1px solid #e8eef3 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+  margin-bottom: 26px !important;
+}
+
+.service-details__pages__title {
+  font-family: var(--findox-heading-font, "Sora", sans-serif) !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #0b1a2b !important;
+  margin-bottom: 20px !important;
+  position: relative !important;
+  padding-bottom: 12px !important;
+}
+
+.service-details__pages__title::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 44px !important;
+  height: 3px !important;
+  background: #5bbd0f !important;
+  border-radius: 3px !important;
+}
+
+.service-details__nav {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.service-details__nav li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.service-details__nav li + li {
+  margin-top: 10px !important;
+}
+
+.service-details__nav li a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  padding: 13px 18px !important;
+  background-color: #f8fafc !important;
+  border: 1px solid #e8eef3 !important;
+  border-radius: 12px !important;
+  font-family: var(--findox-heading-font, "Sora", sans-serif) !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #1e293b !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.service-details__nav li a span:first-child {
+  flex: 1 !important;
+}
+
+.service-details__nav li a:hover {
+  background: #005a49 !important;
+  color: #ffffff !important;
+  border-color: #005a49 !important;
+  transform: translateX(4px) !important;
+  box-shadow: 0 6px 18px rgba(0, 90, 73, 0.18) !important;
+}
+
+.service-details__nav li.current a {
+  background: linear-gradient(135deg, #005a49 0%, #003e33 100%) !important;
+  color: #ffffff !important;
+  border-color: #005a49 !important;
+  box-shadow: 0 6px 20px rgba(0, 90, 73, 0.22) !important;
+}
+
+.service-details__nav li a .service-details__nav__icon {
+  width: 28px !important;
+  height: 28px !important;
+  background: #ffffff !important;
+  color: #005a49 !important;
+  font-size: 11px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  transition: all 0.3s ease !important;
+}
+
+.service-details__nav li a:hover .service-details__nav__icon,
+.service-details__nav li.current a .service-details__nav__icon {
+  background: #5bbd0f !important;
+  color: #ffffff !important;
+}
+
+/* 2. Direct CA Consultation Box Widget */
+.service-sidebar-widget {
+  border-radius: 20px !important;
+  padding: 28px 24px !important;
+  margin-bottom: 26px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+.service-sidebar-widget--contact {
+  background: linear-gradient(145deg, #072a24 0%, #021612 100%) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 12px 35px rgba(0, 42, 36, 0.25) !important;
+}
+
+.service-sidebar-widget__glow {
+  position: absolute !important;
+  top: -40px !important;
+  right: -40px !important;
+  width: 140px !important;
+  height: 140px !important;
+  background: radial-gradient(circle, rgba(91, 189, 15, 0.28) 0%, transparent 70%) !important;
+  pointer-events: none !important;
+}
+
+.service-sidebar-widget__badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 6px 14px !important;
+  border-radius: 20px !important;
+  background: rgba(91, 189, 15, 0.16) !important;
+  color: #7ce320 !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin-bottom: 16px !important;
+  border: 1px solid rgba(91, 189, 15, 0.3) !important;
+}
+
+.service-sidebar-widget__title {
+  color: #ffffff !important;
+  font-size: 21px !important;
+  font-weight: 700 !important;
+  line-height: 1.32 !important;
+  margin-bottom: 12px !important;
+  font-family: var(--findox-heading-font, "Sora", sans-serif) !important;
+}
+
+.service-sidebar-widget__text {
+  color: #a7cbc5 !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  margin-bottom: 22px !important;
+}
+
+.service-sidebar-widget__links {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+}
+
+.service-sidebar-widget__call {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  background: rgba(255, 255, 255, 0.07) !important;
+  padding: 12px 16px !important;
+  border-radius: 12px !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  transition: all 0.3s ease !important;
+}
+
+.service-sidebar-widget__call:hover {
+  background: rgba(255, 255, 255, 0.14) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+}
+
+.service-sidebar-widget__icon {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background: #5bbd0f !important;
+  color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 15px !important;
+  flex-shrink: 0 !important;
+}
+
+.service-sidebar-widget__call-info small {
+  display: block !important;
+  font-size: 11px !important;
+  color: #92bbb5 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+.service-sidebar-widget__call-info strong {
+  font-size: 16px !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.service-sidebar-widget__btn-wa {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  background: #25D366 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  padding: 12px 20px !important;
+  border-radius: 12px !important;
+  text-decoration: none !important;
+  font-size: 14px !important;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.service-sidebar-widget__btn-wa:hover {
+  background: #1eb855 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 22px rgba(37, 211, 102, 0.4) !important;
+}
+
+.service-sidebar-widget__footer {
+  margin-top: 18px !important;
+  padding-top: 14px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  font-size: 12px !important;
+  color: #7fa49d !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+/* 3. Callback Request Box */
+.service-sidebar-widget--callback {
+  background: #f1f8f6 !important;
+  border: 1px solid #d2eae2 !important;
+  box-shadow: 0 8px 25px rgba(0, 90, 73, 0.05) !important;
+}
+
+.service-sidebar-widget__sub {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+  color: #006654 !important;
+  display: block !important;
+  margin-bottom: 6px !important;
+}
+
+.service-sidebar-widget__heading {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #0b1a2b !important;
+  margin-bottom: 10px !important;
+  line-height: 1.35 !important;
+  font-family: var(--findox-heading-font, "Sora", sans-serif) !important;
+}
+
+.service-sidebar-widget__desc {
+  font-size: 13.5px !important;
+  color: #556980 !important;
+  line-height: 1.55 !important;
+  margin-bottom: 18px !important;
+}
+
+/* Right Main Column Content */
+.service-details__main {
+  background: #ffffff !important;
+  border-radius: 20px !important;
+  padding: 35px 38px !important;
+  border: 1px solid #e8eef3 !important;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.04) !important;
+}
+
+@media (max-width: 767px) {
+  .service-details__main {
+    padding: 24px 18px !important;
+  }
+}
+
+.service-details__image {
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+  margin-bottom: 30px !important;
+}
+
+.service-details__hero-img {
+  width: 100% !important;
+  height: 380px !important;
+  object-fit: cover !important;
+  display: block !important;
+  border-radius: 16px !important;
+}
+
+@media (max-width: 767px) {
+  .service-details__hero-img {
+    height: 240px !important;
+  }
+}
+
+.service-details__tag {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-bottom: 14px !important;
+  background: #eef8ec !important;
+  padding: 6px 16px !important;
+  border-radius: 30px !important;
+  border: 1px solid #d4ecd0 !important;
+}
+
+.service-details__tag-bar {
+  width: 8px !important;
+  height: 8px !important;
+  background: #5bbd0f !important;
+  border-radius: 50% !important;
+}
+
+.service-details__tag-text {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+  color: #005a49 !important;
+}
+
+.service-details__title {
+  font-size: 28px !important;
+  font-weight: 800 !important;
+  color: #0b1a2b !important;
+  line-height: 1.35 !important;
+  margin-bottom: 22px !important;
+  font-family: var(--findox-heading-font, "Sora", sans-serif) !important;
+}
+
+@media (max-width: 767px) {
+  .service-details__title {
+    font-size: 22px !important;
+  }
+}
+
+.service-details__text {
+  font-size: 15.5px !important;
+  line-height: 1.75 !important;
+  color: #4a5c6e !important;
+  margin-bottom: 18px !important;
+}
+
+/* Subheadings with colored icon */
+.service-details__subheading {
+  font-size: 21px !important;
+  font-weight: 700 !important;
+  color: #0b1a2b !important;
+  margin-top: 38px !important;
+  margin-bottom: 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  font-family: var(--findox-heading-font, "Sora", sans-serif) !important;
+}
+
+.service-details__subheading-icon {
+  width: 36px !important;
+  height: 36px !important;
+  background: #eef8ec !important;
+  color: #4da70b !important;
+  border-radius: 10px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 16px !important;
+  flex-shrink: 0 !important;
+}
+
+.service-details__subtext {
+  font-size: 14.5px !important;
+  color: #64748b !important;
+  margin-bottom: 20px !important;
+  line-height: 1.6 !important;
+}
+
+/* Scope of Work Deliverables Grid */
+.service-details__scope-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 12px 16px !important;
+  margin-bottom: 35px !important;
+}
+
+@media (max-width: 767px) {
+  .service-details__scope-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.service-details__scope-item {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  background: #f8fafc !important;
+  padding: 13px 16px !important;
+  border-radius: 12px !important;
+  border: 1px solid #eef2f6 !important;
+  transition: all 0.25s ease !important;
+}
+
+.service-details__scope-item:hover {
+  background: #ffffff !important;
+  border-color: #5bbd0f !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(91, 189, 15, 0.1) !important;
+}
+
+.service-details__scope-check {
+  color: #4da70b !important;
+  font-size: 15px !important;
+  margin-top: 3px !important;
+  flex-shrink: 0 !important;
+}
+
+.service-details__scope-text {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #1e293b !important;
+  line-height: 1.45 !important;
+}
+
+/* Why Choose Jolly & Co Cards */
+.service-benefit-card {
+  background: #f9fbfb !important;
+  border-radius: 14px !important;
+  padding: 22px !important;
+  border: 1px solid #e8f0ed !important;
+  height: 100% !important;
+  display: flex !important;
+  gap: 16px !important;
+  transition: all 0.3s ease !important;
+}
+
+.service-benefit-card:hover {
+  background: #ffffff !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06) !important;
+  border-color: #5bbd0f !important;
+}
+
+.service-benefit-card__icon-box {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 12px !important;
+  background: linear-gradient(135deg, #005a49 0%, #003e33 100%) !important;
+  color: #5bbd0f !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 18px !important;
+  flex-shrink: 0 !important;
+}
+
+.service-benefit-card__title {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #0b1a2b !important;
+  margin-bottom: 6px !important;
+  font-family: var(--findox-heading-font, "Sora", sans-serif) !important;
+}
+
+.service-benefit-card__desc {
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+  color: #5d7186 !important;
+  margin: 0 !important;
+}
+
+/* 4-Step Process Timeline Cards */
+.service-process-timeline {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 16px !important;
+  margin-bottom: 35px !important;
+}
+
+@media (max-width: 767px) {
+  .service-process-timeline {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.service-process-card {
+  background: #ffffff !important;
+  border-radius: 14px !important;
+  padding: 22px !important;
+  border: 1px solid #eef2f6 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.02) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+}
+
+.service-process-card:hover {
+  border-color: #5bbd0f !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06) !important;
+}
+
+.service-process-card__badge {
+  display: inline-block !important;
+  padding: 4px 12px !important;
+  background: #eef8ec !important;
+  color: #005a49 !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  border-radius: 6px !important;
+  margin-bottom: 12px !important;
+  letter-spacing: 0.5px !important;
+}
+
+.service-process-card__title {
+  font-size: 16.5px !important;
+  font-weight: 700 !important;
+  color: #0b1a2b !important;
+  margin-bottom: 6px !important;
+  font-family: var(--findox-heading-font, "Sora", sans-serif) !important;
+}
+
+.service-process-card__desc {
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+  color: #5d7186 !important;
+  margin: 0 !important;
+}
+
+/* Service Accordion FAQs */
+.service-accordion {
+  margin-top: 10px !important;
+}
+
+.service-accordion .accordion-item {
+  border: 1px solid #eef2f6 !important;
+  border-radius: 12px !important;
+  margin-bottom: 12px !important;
+  overflow: hidden !important;
+  background: #ffffff !important;
+}
+
+.service-accordion .accordion-button {
+  font-size: 15.5px !important;
+  font-weight: 700 !important;
+  color: #0b1a2b !important;
+  padding: 16px 20px !important;
+  background: #ffffff !important;
+  font-family: var(--findox-heading-font, "Sora", sans-serif) !important;
+  box-shadow: none !important;
+}
+
+.service-accordion .accordion-button:not(.collapsed) {
+  color: #005a49 !important;
+  background: #f4faf7 !important;
+  border-bottom: 1px solid #e2efe9 !important;
+}
+
+.service-accordion .accordion-body {
+  font-size: 14.5px !important;
+  line-height: 1.68 !important;
+  color: #4a5c6e !important;
+  padding: 18px 20px !important;
+  background: #ffffff !important;
+}

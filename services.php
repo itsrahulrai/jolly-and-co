@@ -79,7 +79,6 @@ ob_start();
     </div>
 </section>
 
-<?php include __DIR__ . '/includes/cta.php'; ?>
 <?php
 $content = ob_get_clean();
 include __DIR__ . '/layout.php';

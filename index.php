@@ -66,10 +66,10 @@ include __DIR__ . '/includes/slider.php';
                     <div class="features-three__content">
                         <div class="features-three__top">
                             <span class="features-three__icon"><i class="icon-stats-2"></i></span>
-                            <h4 class="features-three__title"><a href="services.php#taxation">Income Tax &amp; GST Made Simple</a></h4>
+                            <h4 class="features-three__title"><a href="service-taxation.php">Income Tax &amp; GST Made Simple</a></h4>
                         </div>
                         <p class="features-three__text">On-time return filing, registrations, notice replies and smart tax planning for individuals, firms and companies.</p>
-                        <a href="services.php#taxation" class="findox-btn findox-btn--white">
+                        <a href="service-taxation.php" class="findox-btn findox-btn--white">
                             <span class="findox-btn__text">Read More</span>
                             <span class="findox-btn__icon-box"><span class="findox-btn__icon"><i class="icon-arrow-right-up"></i><i class="icon-arrow-right-up"></i></span></span>
                         </a>
@@ -84,10 +84,10 @@ include __DIR__ . '/includes/slider.php';
                     <div class="features-three__content">
                         <div class="features-three__top">
                             <span class="features-three__icon"><i class="icon-approach"></i></span>
-                            <h4 class="features-three__title"><a href="services.php#business-advisory">Business Advisory &amp; Planning</a></h4>
+                            <h4 class="features-three__title"><a href="service-business-advisory.php">Business Advisory &amp; Planning</a></h4>
                         </div>
                         <p class="features-three__text">Structuring, budgeting, cash-flow planning and loan documentation to help your business grow with confidence.</p>
-                        <a href="services.php#business-advisory" class="findox-btn findox-btn--white">
+                        <a href="service-business-advisory.php" class="findox-btn findox-btn--white">
                             <span class="findox-btn__text">Read More</span>
                             <span class="findox-btn__icon-box"><span class="findox-btn__icon"><i class="icon-arrow-right-up"></i><i class="icon-arrow-right-up"></i></span></span>
                         </a>
@@ -116,143 +116,32 @@ include __DIR__ . '/includes/slider.php';
         </div>
 
         <div class="row gutter-y-30">
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="100">
+            <?php foreach ($services as $i => $s): 
+                $svcUrl = !empty($s['url']) ? $s['url'] : ('service-' . $s['slug'] . '.php');
+            ?>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="<?= 100 * (($i % 3) + 1) ?>">
                 <div class="service-card">
                     <div class="service-card__bg">
-                        <div class="service-card__bg__main" style="background-image: url(assets/images/services/service-1-1.jpg)"></div>
+                        <div class="service-card__bg__main" style="background-image: url(<?= e($s['image']) ?>)"></div>
                     </div>
                     <div class="service-card__content">
                         <div class="service-card__tagline">
                             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="11.5" y="3.01463" width="12" height="12" transform="rotate(45 11.5 3.01463)" />
                             </svg>
-                            <p class="service-card__tagline__text">Finance Strategic Business</p>
+                            <p class="service-card__tagline__text">Chartered Accountancy</p>
                         </div>
-                        <h3 class="service-card__title"><a href="service-d-business-analytics.php">Business Analytics <br> Statistics</a></h3>
-                        <p class="service-card__text">We deliver accurate analytics statistics to track growth, improve strategies, and support informed decisions.</p>
+                        <h3 class="service-card__title"><a href="<?= e($svcUrl) ?>"><?= e($s['title']) ?></a></h3>
+                        <p class="service-card__text"><?= e($s['short']) ?></p>
                         <div class="service-card__bottom">
-                            <span class="service-card__icon"><i class="icon-stats-2"></i></span>
+                            <span class="service-card__icon"><i class="<?= e($s['icon']) ?>"></i></span>
                             <h4 class="service-card__number"></h4>
                         </div>
-                        <a href="service-d-business-analytics.php" class="service-card__btn"><i class="icon-right-2"></i></a>
+                        <a href="<?= e($svcUrl) ?>" class="service-card__btn"><i class="icon-right-2"></i></a>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="200">
-                <div class="service-card">
-                    <div class="service-card__bg">
-                        <div class="service-card__bg__main" style="background-image: url(assets/images/services/service-1-2.jpg)"></div>
-                    </div>
-                    <div class="service-card__content">
-                        <div class="service-card__tagline">
-                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="11.5" y="3.01463" width="12" height="12" transform="rotate(45 11.5 3.01463)" />
-                            </svg>
-                            <p class="service-card__tagline__text">Finance Strategic Business</p>
-                        </div>
-                        <h3 class="service-card__title"><a href="service-d-finance-services.php">Personal Finance <br> Services</a></h3>
-                        <p class="service-card__text">Our personal finance services help manage wealth, control expenses, and build trusted financial stability.</p>
-                        <div class="service-card__bottom">
-                            <span class="service-card__icon"><i class="icon-agreement"></i></span>
-                            <h4 class="service-card__number"></h4>
-                        </div>
-                        <a href="service-d-finance-services.php" class="service-card__btn"><i class="icon-right-2"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="300">
-                <div class="service-card">
-                    <div class="service-card__bg">
-                        <div class="service-card__bg__main" style="background-image: url(assets/images/services/service-1-3.jpg)"></div>
-                    </div>
-                    <div class="service-card__content">
-                        <div class="service-card__tagline">
-                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="11.5" y="3.01463" width="12" height="12" transform="rotate(45 11.5 3.01463)" />
-                            </svg>
-                            <p class="service-card__tagline__text">Finance Strategic Business</p>
-                        </div>
-                        <h3 class="service-card__title"><a href="service-d-business-accounts.php">Banking & Business <br> Accounts</a></h3>
-                        <p class="service-card__text">Open a secure bank business account designed for easy management, reliable transactions, and growth.</p>
-                        <div class="service-card__bottom">
-                            <span class="service-card__icon"><i class="icon-bank"></i></span>
-                            <h4 class="service-card__number"></h4>
-                        </div>
-                        <a href="service-d-business-accounts.php" class="service-card__btn"><i class="icon-right-2"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="100">
-                <div class="service-card">
-                    <div class="service-card__bg">
-                        <div class="service-card__bg__main" style="background-image: url(assets/images/services/service-1-4.jpg)"></div>
-                    </div>
-                    <div class="service-card__content">
-                        <div class="service-card__tagline">
-                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="11.5" y="3.01463" width="12" height="12" transform="rotate(45 11.5 3.01463)" />
-                            </svg>
-                            <p class="service-card__tagline__text">Finance Strategic Business</p>
-                        </div>
-                        <h3 class="service-card__title"><a href="service-d-data-solutions.php">Financial Data Analysis <br> Solutions</a></h3>
-                        <p class="service-card__text">We provide advanced data analysis solutions ensuring accuracy, efficiency, and strong insights.</p>
-                        <div class="service-card__bottom">
-                            <span class="service-card__icon"><i class="icon-analysis"></i></span>
-                            <h4 class="service-card__number"></h4>
-                        </div>
-                        <a href="service-d-data-solutions.php" class="service-card__btn"><i class="icon-right-2"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="200">
-                <div class="service-card">
-                    <div class="service-card__bg">
-                        <div class="service-card__bg__main" style="background-image: url(assets/images/services/service-1-5.jpg)"></div>
-                    </div>
-                    <div class="service-card__content">
-                        <div class="service-card__tagline">
-                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="11.5" y="3.01463" width="12" height="12" transform="rotate(45 11.5 3.01463)" />
-                            </svg>
-                            <p class="service-card__tagline__text">Finance Strategic Business</p>
-                        </div>
-                        <h3 class="service-card__title"><a href="service-d-finance-planning.php">Strategic Finance <br> Planning</a></h3>
-                        <p class="service-card__text">Our strategic finance planning guides organizations with budgeting, forecasting, and financial decisions.</p>
-                        <div class="service-card__bottom">
-                            <span class="service-card__icon"><i class="icon-planning"></i></span>
-                            <h4 class="service-card__number"></h4>
-                        </div>
-                        <a href="service-d-finance-planning.php" class="service-card__btn"><i class="icon-right-2"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300" data-aos-delay="300">
-                <div class="service-card">
-                    <div class="service-card__bg">
-                        <div class="service-card__bg__main" style="background-image: url(assets/images/services/service-1-6.jpg)"></div>
-                    </div>
-                    <div class="service-card__content">
-                        <div class="service-card__tagline">
-                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="11.5" y="3.01463" width="12" height="12" transform="rotate(45 11.5 3.01463)" />
-                            </svg>
-                            <p class="service-card__tagline__text">Finance Strategic Business</p>
-                        </div>
-                        <h3 class="service-card__title"><a href="service-d-support-services.php">24/7 Team Support <br> Services</a></h3>
-                        <p class="service-card__text">Our 24/7 support team ensures reliable assistance, quick solutions, and continuous service for clients.</p>
-                        <div class="service-card__bottom">
-                            <span class="service-card__icon"><i class="icon-support"></i></span>
-                            <h4 class="service-card__number"></h4>
-                        </div>
-                        <a href="service-d-support-services.php" class="service-card__btn"><i class="icon-right-2"></i></a>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
@@ -376,7 +265,7 @@ include __DIR__ . '/includes/slider.php';
     </div>
 </section>
 
-<section class="funfact funfact--two" style="background: linear-gradient(135deg, #6BCB12 0%, #58b00a 100%);">
+<section class="funfact funfact--two">
     <div class="container">
         <div class="row gutter-y-30">
 
@@ -651,7 +540,6 @@ include __DIR__ . '/includes/slider.php';
     </div>
 </section>
 
-<?php include __DIR__ . '/includes/cta.php'; ?>
 <?php
 $content = ob_get_clean();
 include __DIR__ . '/layout.php';
