@@ -28,11 +28,11 @@ include __DIR__ . '/includes/slider.php';
                 <div class="about-three__content">
                     <div class="about-three__content__left">
                         <div class="sec-title">
-                            <div class="sec-title__top" style="--tagline-bg: #ECF5F4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
-                                <img src="assets/images/shapes/sec-title-shape-1-1.png" alt="" class="sec-title__shape">
+                            <div class="sec-title__top" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+                                <span class="sec-title__dot"></span>
                                 <p class="sec-title__tagline">About <?= e($site['name']) ?></p>
                             </div>
-                            <h2 class="sec-title__title bw-split-in-up" style="--title-color: #000000">Your Trusted Chartered Accountants in Delhi.</h2>
+                            <h2 class="sec-title__title" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" style="--title-color: #082e54">Your Trusted <span class="sec-title__highlight">Chartered Accountants</span> in Delhi.</h2>
                         </div>
                         <p class="about-three__text" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">Based in Kalkaji, New Delhi, <?= e($site['full_name']) ?> helps individuals, professionals and businesses keep their finances accurate, compliant and tax-efficient. We combine sound technical knowledge with clear, timely communication.</p>
                         <div class="about-three__item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
@@ -106,12 +106,12 @@ include __DIR__ . '/includes/slider.php';
 <section class="services-one section-space">
     <div class="container">
         <div class="sec-title sec-title--center">
-            <div class="sec-title__top" style="--tagline-bg: #FFFFFF" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
-                <img src="assets/images/shapes/sec-title-shape-1-1.png" alt="shape" class="sec-title__shape">
+            <div class="sec-title__top" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+                <span class="sec-title__dot"></span>
                 <p class="sec-title__tagline">Our Services</p>
             </div>
-            <h2 class="sec-title__title bw-split-in-up" style="--title-color: #000000">
-               Smart Financial Solutions for Your Business
+            <h2 class="sec-title__title" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" style="--title-color: #082e54">
+               Smart <span class="sec-title__highlight">Financial Solutions</span> for Your Business
             </h2>
         </div>
 
@@ -148,119 +148,142 @@ include __DIR__ . '/includes/slider.php';
 
 <section class="testimonials-one section-space">
     <div class="container">
-      <div class="sec-title sec-title--center">
-    <div class="sec-title__top" style='--tagline-bg: #ECF5F4' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
-        <img src="assets/images/shapes/sec-title-shape-1-1.png" alt="shape" class="sec-title__shape">
-        <p class="sec-title__tagline">Testimonials</p>
-    </div>
-    <h2 class="sec-title__title bw-split-in-up" style='--title-color: #000000'>
-       Trusted by Clients Committed to Success
-    </h2>
-</div>
+        <div class="sec-title sec-title--center testimonials-sec-title">
+            <div class="testimonials-sec-title__badge" data-aos="fade-up" data-aos-duration="1000">
+                <span class="testimonials-sec-title__dot"></span>
+                <span class="testimonials-sec-title__tagline">Client Success Stories</span>
+            </div>
+            <h2 class="testimonials-sec-title__heading" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                What Our Clients Say <span class="testimonials-sec-title__highlight">About Us</span>
+            </h2>
+            <p class="testimonials-sec-title__sub" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                Read what business owners have to say about their experience with Jolly &amp; Co.
+            </p>
+        </div>
 
         <div class="testimonials-one__wrapper" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
-            <div class="testimonials-one__carousel findox-owl__carousel--with-counter findox-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
+            <div class="testimonials-one__carousel findox-owl__carousel owl-carousel owl-theme" data-owl-options='{
                 "items": 1,
                 "margin": 30,
                 "autoplay": true,
                 "loop": true,
                 "smartSpeed": 700,
                 "nav": true,
-                "dots": false,
-                "navText": ["<i class=\"icon-arrow-left\"></i>","<i class=\"icon-arrow-right\"></i>"]
+                "dots": true,
+                "navText": ["<i class=\"fas fa-chevron-left\"></i>","<i class=\"fas fa-chevron-right\"></i>"]
             }'>
-                <div class="testimonials-one__item">
-                    <div class="testimonials-one__item__image">
-                        <img src="assets/images/testimonals/testimonial-man.png" alt="Rajesh Sharma">
-                        <div class="findox-ratings">
-                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
-                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
-                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
-                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
-                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+
+                <!-- Slide 1: Pooja Agarwal (Exact match with reference mockup) -->
+                <div class="testimonials-card__item">
+                    <!-- Left: Client Profile Card -->
+                    <div class="testimonials-card__profile">
+                        <div class="testimonials-card__avatar-box">
+                            <img src="assets/images/team/team-2-1.jpg" alt="Pooja Agarwal" class="testimonials-card__avatar-img">
+                            <span class="testimonials-card__avatar-check"><i class="fas fa-check"></i></span>
+                            <span class="testimonials-card__verified-badge"><i class="fas fa-check-circle"></i> Verified Client</span>
+                        </div>
+                        <h4 class="testimonials-card__name">Pooja Agarwal</h4>
+                        <p class="testimonials-card__role">Co-Founder, GreenRoots Retail</p>
+                        <p class="testimonials-card__location"><i class="fas fa-map-marker-alt"></i> Kalkaji, New Delhi</p>
+                        <div class="testimonials-card__service-badge">
+                            <i class="fas fa-rocket"></i> Startup Advisory &amp; GST
                         </div>
                     </div>
 
-                    <div class="testimonials-one__item__content">
-                        <svg class="testimonials-one__item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 66" fill="none">
-                            <path d="M60.7549 6.17188C64.6411 5.66516 66.5008 7.52302 66.501 10.0576C66.501 13.2688 61.5986 15.634 59.2334 17.1553C51.6291 21.7181 46.8975 25.9432 46.8975 29.1533C46.8977 31.5194 50.6158 31.5189 52.3057 31.6875C60.4167 32.3639 65.6551 41.1506 65.6562 48.7549C65.6562 58.7254 57.3754 65.9921 47.7441 65.9922C35.7455 65.9922 28.3105 55.0075 28.3105 44.0234C28.3106 33.2093 35.7452 22.2256 43.6875 15.6348C51.2907 9.21358 57.037 6.67865 60.7549 6.17188Z" />
-                            <path d="M32.4443 0.0839844C36.3306 -0.422735 38.1903 1.43513 38.1904 3.96973C38.1904 7.18088 33.2901 9.54609 30.9238 11.0674C23.3195 15.6302 18.5889 19.8554 18.5889 23.0654C18.5891 25.4314 22.3062 25.4311 23.9961 25.5996C25.639 25.7362 27.1619 26.2111 28.5498 26.9365C25.6875 32.1352 23.7433 37.9893 23.7422 44.0254C23.7422 48.9135 25.0048 53.8654 27.3721 58.1455C24.9579 59.2774 22.2542 59.9052 19.4336 59.9053C7.43498 59.9053 0 48.9206 0 37.9365C0.000139867 27.1213 7.43572 16.1377 15.377 9.54688C22.9802 3.12568 28.7264 0.590755 32.4443 0.0839844Z" />
-                        </svg>
-
-                        <p class="testimonials-one__item__quote">
-                            Jolly & Co. has been managing our corporate tax filing, statutory audits, and GST compliance for over five years. Their proactive advice on <span>tax planning & ROC compliance</span> has saved us substantial costs while keeping our company 100% compliant with regulatory standards.
-                        </p>
-
-                        <div class="testimonials-one__item__identity">
-                            <h4 class="testimonials-one__item__name">Rajesh Sharma</h4>
-                            <p class="testimonials-one__item__designation">Director, Apex Logistics Pvt. Ltd., New Delhi</p>
+                    <!-- Right: Testimonial Content & Feature Metrics -->
+                    <div class="testimonials-card__body">
+                        <!-- Top Category Pill -->
+                        <div class="testimonials-card__category">
+                            <span class="testimonials-card__category-icon"><i class="fas fa-chart-bar"></i></span>
+                            <span>Startup Financial Advisory</span>
                         </div>
-                    </div>
-                </div>
 
-                <div class="testimonials-one__item">
-                    <div class="testimonials-one__item__image">
-                        <img src="assets/images/testimonals/testimonial-woman.png" alt="Pooja Agarwal">
-                        <div class="findox-ratings">
-                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
-                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
-                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
-                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
-                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
-                        </div>
-                    </div>
-
-                    <div class="testimonials-one__item__content">
-                        <svg class="testimonials-one__item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 66" fill="none">
-                            <path d="M60.7549 6.17188C64.6411 5.66516 66.5008 7.52302 66.501 10.0576C66.501 13.2688 61.5986 15.634 59.2334 17.1553C51.6291 21.7181 46.8975 25.9432 46.8975 29.1533C46.8977 31.5194 50.6158 31.5189 52.3057 31.6875C60.4167 32.3639 65.6551 41.1506 65.6562 48.7549C65.6562 58.7254 57.3754 65.9921 47.7441 65.9922C35.7455 65.9922 28.3105 55.0075 28.3105 44.0234C28.3106 33.2093 35.7452 22.2256 43.6875 15.6348C51.2907 9.21358 57.037 6.67865 60.7549 6.17188Z" />
-                            <path d="M32.4443 0.0839844C36.3306 -0.422735 38.1903 1.43513 38.1904 3.96973C38.1904 7.18088 33.2901 9.54609 30.9238 11.0674C23.3195 15.6302 18.5889 19.8554 18.5889 23.0654C18.5891 25.4314 22.3062 25.4311 23.9961 25.5996C25.639 25.7362 27.1619 26.2111 28.5498 26.9365C25.6875 32.1352 23.7433 37.9893 23.7422 44.0254C23.7422 48.9135 25.0048 53.8654 27.3721 58.1455C24.9579 59.2774 22.2542 59.9052 19.4336 59.9053C7.43498 59.9053 0 48.9206 0 37.9365C0.000139867 27.1213 7.43572 16.1377 15.377 9.54688C22.9802 3.12568 28.7264 0.590755 32.4443 0.0839844Z" />
-                        </svg>
-
-                        <p class="testimonials-one__item__quote">
-                            As a fast-growing startup, managing bookkeeping, monthly TDS, and GST returns was daunting. The team at Jolly & Co. took complete ownership of our accounts. Their expertise in <span>startup financial advisory</span> and direct access to senior partners made all the difference.
-                        </p>
-
-                        <div class="testimonials-one__item__identity">
-                            <h4 class="testimonials-one__item__name">Pooja Agarwal</h4>
-                            <p class="testimonials-one__item__designation">Co-Founder, GreenRoots Retail, Kalkaji</p>
+                        <!-- Quote with Large Green Quotes -->
+                        <div class="testimonials-card__quote-wrap">
+                            <span class="testimonials-card__quote-mark testimonials-card__quote-mark--left">“</span>
+                            <p class="testimonials-card__quote-text">
+                                As a fast-growing startup, managing bookkeeping, monthly TDS, and GST returns was daunting. The team at Jolly &amp; Co. took complete ownership of our accounts. Their expertise in <mark class="testimonials-card__highlight">startup financial advisory</mark> and direct access to senior partners made all the difference.
+                            </p>
+                            <span class="testimonials-card__quote-mark testimonials-card__quote-mark--right">”</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="testimonials-one__item">
-                    <div class="testimonials-one__item__image">
-                        <img src="assets/images/testimonals/testimonial-man.png" alt="Vikram Malhotra">
-                        <div class="findox-ratings">
-                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
-                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
-                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
-                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
-                            <span class="findox-ratings__icon"><i class="fas fa-star"></i></span>
+                <!-- Slide 2: Rajesh Sharma -->
+                <div class="testimonials-card__item">
+                    <!-- Left: Client Profile Card -->
+                    <div class="testimonials-card__profile">
+                        <div class="testimonials-card__avatar-box">
+                            <img src="assets/images/team/team-2-2.jpg" alt="Rajesh Sharma" class="testimonials-card__avatar-img">
+                            <span class="testimonials-card__avatar-check"><i class="fas fa-check"></i></span>
+                            <span class="testimonials-card__verified-badge"><i class="fas fa-check-circle"></i> Verified Client</span>
+                        </div>
+                        <h4 class="testimonials-card__name">Rajesh Sharma</h4>
+                        <p class="testimonials-card__role">Managing Director, Apex Logistics</p>
+                        <p class="testimonials-card__location"><i class="fas fa-map-marker-alt"></i> Okhla Phase-III, New Delhi</p>
+                        <div class="testimonials-card__service-badge">
+                            <i class="fas fa-shield-alt"></i> Corporate Tax &amp; Audit
                         </div>
                     </div>
 
-                    <div class="testimonials-one__item__content">
-                        <svg class="testimonials-one__item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67 66" fill="none">
-                            <path d="M60.7549 6.17188C64.6411 5.66516 66.5008 7.52302 66.501 10.0576C66.501 13.2688 61.5986 15.634 59.2334 17.1553C51.6291 21.7181 46.8975 25.9432 46.8975 29.1533C46.8977 31.5194 50.6158 31.5189 52.3057 31.6875C60.4167 32.3639 65.6551 41.1506 65.6562 48.7549C65.6562 58.7254 57.3754 65.9921 47.7441 65.9922C35.7455 65.9922 28.3105 55.0075 28.3105 44.0234C28.3106 33.2093 35.7452 22.2256 43.6875 15.6348C51.2907 9.21358 57.037 6.67865 60.7549 6.17188Z" />
-                            <path d="M32.4443 0.0839844C36.3306 -0.422735 38.1903 1.43513 38.1904 3.96973C38.1904 7.18088 33.2901 9.54609 30.9238 11.0674C23.3195 15.6302 18.5889 19.8554 18.5889 23.0654C18.5891 25.4314 22.3062 25.4311 23.9961 25.5996C25.639 25.7362 27.1619 26.2111 28.5498 26.9365C25.6875 32.1352 23.7433 37.9893 23.7422 44.0254C23.7422 48.9135 25.0048 53.8654 27.3721 58.1455C24.9579 59.2774 22.2542 59.9052 19.4336 59.9053C7.43498 59.9053 0 48.9206 0 37.9365C0.000139867 27.1213 7.43572 16.1377 15.377 9.54688C22.9802 3.12568 28.7264 0.590755 32.4443 0.0839844Z" />
-                        </svg>
-
-                        <p class="testimonials-one__item__quote">
-                            When I received a complex scrutiny assessment notice from the Income Tax Department, Jolly & Co. handled the matter with exceptional professionalism. They drafted a meticulous, legally sound reply and <span>resolved the assessment smoothly</span> without any penalty.
-                        </p>
-
-                        <div class="testimonials-one__item__identity">
-                            <h4 class="testimonials-one__item__name">Vikram Malhotra</h4>
-                            <p class="testimonials-one__item__designation">Senior Financial Consultant & Investor, New Delhi</p>
+                    <!-- Right: Testimonial Content & Feature Metrics -->
+                    <div class="testimonials-card__body">
+                        <!-- Top Category Pill -->
+                        <div class="testimonials-card__category">
+                            <span class="testimonials-card__category-icon"><i class="fas fa-chart-line"></i></span>
+                            <span>Corporate Tax &amp; Audit</span>
                         </div>
+
+                        <!-- Quote with Large Green Quotes -->
+                        <div class="testimonials-card__quote-wrap">
+                            <span class="testimonials-card__quote-mark testimonials-card__quote-mark--left">“</span>
+                            <p class="testimonials-card__quote-text">
+                                Jolly &amp; Co. has been managing our corporate tax filing, statutory audits, and GST compliance for over five years. Their proactive advice on <mark class="testimonials-card__highlight">tax planning &amp; ROC compliance</mark> has saved us substantial costs while keeping our company 100% compliant with regulatory standards.
+                            </p>
+                            <span class="testimonials-card__quote-mark testimonials-card__quote-mark--right">”</span>
+                        </div>
+
                     </div>
                 </div>
+
+                <!-- Slide 3: Vikram Malhotra -->
+                <div class="testimonials-card__item">
+                    <!-- Left: Client Profile Card -->
+                    <div class="testimonials-card__profile">
+                        <div class="testimonials-card__avatar-box">
+                            <img src="assets/images/team/team-2-3.jpg" alt="Vikram Malhotra" class="testimonials-card__avatar-img">
+                            <span class="testimonials-card__avatar-check"><i class="fas fa-check"></i></span>
+                            <span class="testimonials-card__verified-badge"><i class="fas fa-check-circle"></i> Verified Client</span>
+                        </div>
+                        <h4 class="testimonials-card__name">Vikram Malhotra</h4>
+                        <p class="testimonials-card__role">Senior Consultant &amp; Investor</p>
+                        <p class="testimonials-card__location"><i class="fas fa-map-marker-alt"></i> Greater Kailash, New Delhi</p>
+                        <div class="testimonials-card__service-badge">
+                            <i class="fas fa-balance-scale"></i> Tax Notice &amp; Scrutiny
+                        </div>
+                    </div>
+
+                    <!-- Right: Testimonial Content & Feature Metrics -->
+                    <div class="testimonials-card__body">
+                        <!-- Top Category Pill -->
+                        <div class="testimonials-card__category">
+                            <span class="testimonials-card__category-icon"><i class="fas fa-file-invoice-dollar"></i></span>
+                            <span>Scrutiny Notice Resolution</span>
+                        </div>
+
+                        <!-- Quote with Large Green Quotes -->
+                        <div class="testimonials-card__quote-wrap">
+                            <span class="testimonials-card__quote-mark testimonials-card__quote-mark--left">“</span>
+                            <p class="testimonials-card__quote-text">
+                                When I received a complex scrutiny assessment notice from the Income Tax Department, Jolly &amp; Co. handled the matter with exceptional professionalism. They drafted a meticulous, legally sound reply and <mark class="testimonials-card__highlight">resolved the assessment smoothly</mark> without any penalty.
+                            </p>
+                            <span class="testimonials-card__quote-mark testimonials-card__quote-mark--right">”</span>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-
-            <div class="testimonials-one__shape-1">
-                <img src="assets/images/shapes/testimonials-shape-1-1.png" alt="shape">
-            </div>
-            <img src="assets/images/shapes/testimonials-shape-1-2.png" alt="shape" class="testimonials-one__shape-2">
         </div>
     </div>
 </section>
@@ -336,11 +359,13 @@ include __DIR__ . '/includes/slider.php';
 <section class="faq-one section-space">
     <div class="container">
         <div class="sec-title sec-title--center" style="margin-bottom: 45px;">
-            <div class="sec-title__top" style="--tagline-bg: #ECF5F4" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
-                <img src="assets/images/shapes/sec-title-shape-1-1.png" alt="shape" class="sec-title__shape">
+            <div class="sec-title__top" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+                <span class="sec-title__dot"></span>
                 <p class="sec-title__tagline">FAQ &amp; Blogs</p>
             </div>
-            <h2 class="sec-title__title bw-split-in-up" style="--title-color: #000000">Frequently Asked Questions &amp; Latest Blogs</h2>
+            <h2 class="sec-title__title" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" style="--title-color: #082e54">
+                Frequently Asked Questions &amp; <span class="sec-title__highlight">Latest Blogs</span>
+            </h2>
         </div>
 
         <div class="row gutter-y-40 align-items-stretch">
@@ -349,11 +374,11 @@ include __DIR__ . '/includes/slider.php';
                     <div class="faq-one__content">
                         <div class="faq-one__content__inner">
                             <div class="sec-title">
-                                <div class="sec-title__top" style='--tagline-bg: #FFFFFF' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
-                                    <img src="assets/images/shapes/sec-title-shape-1-1.png" alt="shape" class="sec-title__shape">
-                                    <p class="sec-title__tagline">Our Faq’s</p>
+                                <div class="sec-title__top" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+                                    <span class="sec-title__dot" style="background: #5bbd0f;"></span>
+                                    <p class="sec-title__tagline">Our FAQs</p>
                                 </div>
-                                <h2 class="sec-title__title bw-split-in-up" style='--title-color: #FFFFFF'>Frequently Ask Question.</h2>
+                                <h2 class="sec-title__title" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" style='--title-color: #FFFFFF'>Frequently Asked <span class="sec-title__highlight">Questions.</span></h2>
                             </div>
                             <p class="faq-one__text" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">Chartered accountancy, tax and compliance services tailored to your personal and business growth.</p>
                             <div class="faq-accordion findox-accordion" data-grp-name="findox-accordion">

@@ -9,106 +9,263 @@ $seo = [
     'path'        => 'contact.php',
 ];
 $pageHeading = 'Contact Us';
+
+$extra_css = '<link rel="stylesheet" href="assets/css/contact-modern.css?v=' . (file_exists(__DIR__ . '/assets/css/contact-modern.css') ? filemtime(__DIR__ . '/assets/css/contact-modern.css') : time()) . '">';
+
 ob_start();
 ?>
 
-<section class="contact-one contact-one--page section-space">
-    <div class="contact-one__bg">
-        <img src="assets/images/shapes/contact-shape-1-2.png" alt="" class="contact-one__bg__shape">
-    </div>
+<!-- =========================================================================
+     Modern Contact Section matching Design Mockup
+     ========================================================================= -->
+<section class="modern-contact-section">
+    <!-- Background Decor Elements -->
+    <div class="modern-contact-section__bg-building"></div>
+    <div class="modern-contact-section__rings"></div>
+    <div class="modern-contact-section__green-glow"></div>
+    <div class="modern-contact-section__green-wave"></div>
+    <div class="modern-contact-section__dots"></div>
+
     <div class="container">
-        <div class="row gutter-y-40">
-            <div class="col-xl-5 col-lg-6">
-                <div class="contact-one__content">
-                    <div class="sec-title">
-                        <div class="sec-title__top" style="--tagline-bg: #FFFFFF">
-                            <img src="assets/images/shapes/sec-title-shape-1-1.png" alt="" class="sec-title__shape">
-                            <p class="sec-title__tagline">Get In Touch</p>
-                        </div>
-                        <h2 class="sec-title__title" style="--title-color: #FFFFFF">Book a Consultation <br> or Request a Quote.</h2>
+        <div class="row align-items-center">
+            <!-- Left Column: Heading & Contact Info Cards -->
+            <div class="col-xl-5 col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                <div class="modern-contact-hero">
+                    <div class="modern-contact-badge">
+                        <span class="modern-contact-badge__slashes">//</span> GET IN TOUCH
                     </div>
-                    <ul class="contact-one__info list-unstyled">
-                        <li>
-                            <div class="contact-one__info__inner">
-                                <span class="contact-one__info__icon"><i class="icon-phone-call"></i></span>
-                                <div class="contact-one__info__content">
-                                    <h4 class="contact-one__info__title">Call Us</h4>
-                                    <a href="tel:<?= e($site['phone_link']) ?>" class="contact-one__info__text"><?= e($site['phone']) ?></a>
+
+                    <h1 class="modern-contact-hero__title">
+                        Book a Consultation <br>or <span class="modern-contact-hero__highlight">Request a Quote.</span>
+                    </h1>
+
+                    <p class="modern-contact-hero__desc">
+                        Share your requirements and our expert team will get back to you with the best solution.
+                    </p>
+
+                    <div class="modern-contact-hero__divider"></div>
+
+                    <!-- 4 Contact Info Pill Cards -->
+                    <div class="modern-contact-cards">
+                        <!-- 1. Phone -->
+                        <a href="tel:<?= e($site['phone_link']) ?>" class="modern-info-card">
+                            <div class="modern-info-card__left">
+                                <div class="modern-info-card__icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="modern-info-card__details">
+                                    <span class="modern-info-card__title">Call Us</span>
+                                    <span class="modern-info-card__value"><?= e($site['phone']) ?></span>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="contact-one__info__inner">
-                                <span class="contact-one__info__icon"><i class="icon-mail"></i></span>
-                                <div class="contact-one__info__content">
-                                    <h4 class="contact-one__info__title">Send Us Email</h4>
-                                    <a href="mailto:<?= e($site['email']) ?>" class="contact-one__info__text"><?= e($site['email']) ?></a>
+                            <div class="modern-info-card__arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </a>
+
+                        <!-- 2. Email -->
+                        <a href="mailto:<?= e($site['email']) ?>" class="modern-info-card">
+                            <div class="modern-info-card__left">
+                                <div class="modern-info-card__icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="modern-info-card__details">
+                                    <span class="modern-info-card__title">Send Us Email</span>
+                                    <span class="modern-info-card__value"><?= e($site['email']) ?></span>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="contact-one__info__inner">
-                                <span class="contact-one__info__icon"><i class="icon-round-arrow"></i></span>
-                                <div class="contact-one__info__content">
-                                    <h4 class="contact-one__info__title">Visit Our Office</h4>
-                                    <a href="<?= e(map_link()) ?>" target="_blank" rel="noopener" class="contact-one__info__text"><?= e($site['address']) ?></a>
+                            <div class="modern-info-card__arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </a>
+
+                        <!-- 3. Address / Office -->
+                        <a href="<?= e(map_link()) ?>" target="_blank" rel="noopener" class="modern-info-card">
+                            <div class="modern-info-card__left">
+                                <div class="modern-info-card__icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="modern-info-card__details">
+                                    <span class="modern-info-card__title">Visit Our Office</span>
+                                    <span class="modern-info-card__value"><?= e($site['address']) ?></span>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="contact-one__info__inner">
-                                <span class="contact-one__info__icon"><i class="far fa-clock"></i></span>
-                                <div class="contact-one__info__content">
-                                    <h4 class="contact-one__info__title">Office Hours</h4>
-                                    <span class="contact-one__info__text"><?= e($site['hours']) ?></span>
+                            <div class="modern-info-card__arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </a>
+
+                        <!-- 4. Office Hours -->
+                        <div class="modern-info-card">
+                            <div class="modern-info-card__left">
+                                <div class="modern-info-card__icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="modern-info-card__details">
+                                    <span class="modern-info-card__title">Office Hours</span>
+                                    <span class="modern-info-card__value"><?= e($site['hours']) ?></span>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
+                            <div class="modern-info-card__arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-xl-7 col-lg-6" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
-                <div class="contact-one__form">
-                    <form id="whatsappForm" class="form-one" data-whatsapp="<?= e($site['whatsapp']) ?>" data-brand="<?= e($site['name']) ?>" novalidate>
-                        <div class="form-one__group">
-                            <div class="form-one__control form-one__control--full">
-                                <input type="text" name="name" placeholder="Your Name *" required autocomplete="name">
+
+            <!-- Right Column: White Floating Form Card & Doodle -->
+            <div class="col-xl-7 col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                <div class="modern-contact-form-wrap">
+                    <!-- White Card -->
+                    <div class="modern-form-card">
+                        <div class="modern-form-card__bar"></div>
+                        <h2 class="modern-form-card__title">
+                            Send Us a <span class="modern-form-card__highlight">Message</span>
+                        </h2>
+                        <p class="modern-form-card__subtitle">
+                            Fill in the details below and we'll get back to you shortly.
+                        </p>
+
+                        <form id="whatsappForm" data-whatsapp="<?= e($site['whatsapp']) ?>" data-brand="<?= e($site['name']) ?>" novalidate>
+                            <!-- Name -->
+                            <div class="mb-3">
+                                <div class="modern-input-wrap">
+                                    <i class="far fa-user modern-input-icon"></i>
+                                    <input type="text" name="name" class="modern-input" placeholder="Your Name *" required autocomplete="name">
+                                </div>
                             </div>
-                            <div class="form-one__control">
-                                <input type="tel" name="phone" placeholder="Your Phone *" required autocomplete="tel">
+
+                            <!-- Phone & Email in 2 columns -->
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <div class="modern-input-wrap">
+                                        <i class="fas fa-phone-alt modern-input-icon"></i>
+                                        <input type="tel" name="phone" class="modern-input" placeholder="Your Phone *" required autocomplete="tel">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="modern-input-wrap">
+                                        <i class="far fa-envelope modern-input-icon"></i>
+                                        <input type="email" name="email" class="modern-input" placeholder="Your Email" autocomplete="email">
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-one__control">
-                                <input type="email" name="email" placeholder="Your Email" autocomplete="email">
+
+                            <!-- Service Dropdown -->
+                            <div class="mb-3">
+                                <div class="modern-input-wrap">
+                                    <i class="fas fa-th-large modern-input-icon"></i>
+                                    <select name="service" class="modern-input modern-select" aria-label="Select service">
+                                        <option value="">Select Service</option>
+                                        <?php foreach ($services as $s): ?>
+                                            <option value="<?= e($s['title']) ?>"><?= e($s['title']) ?></option>
+                                        <?php endforeach; ?>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down modern-select-arrow"></i>
+                                </div>
                             </div>
-                            <div class="form-one__control form-one__control--full">
-                                <select class="selectpicker" name="service" aria-label="Select service">
-                                    <option value="">Select Service</option>
-                                    <?php foreach ($services as $s): ?>
-                                        <option value="<?= e($s['title']) ?>"><?= e($s['title']) ?></option>
-                                    <?php endforeach; ?>
-                                    <option value="Other">Other</option>
-                                </select>
+
+                            <!-- Message Textarea -->
+                            <div class="mb-4">
+                                <div class="modern-input-wrap">
+                                    <i class="far fa-comment-dots modern-input-icon modern-input-icon--textarea"></i>
+                                    <textarea name="message" class="modern-input modern-textarea" placeholder="How can we help you? *" rows="3" required></textarea>
+                                </div>
                             </div>
-                            <div class="form-one__control form-one__control--full">
-                                <textarea name="message" placeholder="How can we help you? *" rows="4" required></textarea>
-                            </div>
-                            <div class="form-one__control form-one__control--full">
-                                <button type="submit" class="findox-btn findox-btn--base">
-                                    <span class="findox-btn__text"><i class="fab fa-whatsapp"></i> SEND VIA WHATSAPP</span>
-                                    <span class="findox-btn__icon"><i class="icon-arrow-right-2"></i><i class="icon-arrow-right-2"></i></span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="result wa-result" id="waResult" role="status" aria-live="polite"></div>
-                    <p class="wa-note">Your enquiry opens in WhatsApp so you can review and send it to us.</p>
+
+                            <!-- WhatsApp Submit Pill Button -->
+                            <button type="submit" class="modern-wa-submit">
+                                <div class="modern-wa-submit__text">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>SEND VIA WHATSAPP &rarr;</span>
+                                </div>
+                                <div class="modern-wa-submit__arrow">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </button>
+
+                            <!-- Trust note with lock -->
+                            <p class="modern-wa-note">
+                                <i class="fas fa-lock"></i>
+                                <span>Your enquiry opens in WhatsApp so you can review and send it to us.</span>
+                            </p>
+
+                            <!-- Form Result Container -->
+                            <div class="result wa-result" id="waResult" role="status" aria-live="polite"></div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <img src="assets/images/resources/contact-1-1.png" alt="" class="contact-one__image">
 </section>
 
+<!-- =========================================================================
+     Bottom Trust Ribbon (4 Features)
+     ========================================================================= -->
+<section class="modern-contact-ribbon">
+    <div class="container">
+        <div class="row g-0">
+            <!-- 1. Quick Response -->
+            <div class="col-12 col-sm-6 col-lg-3 modern-contact-ribbon__col">
+                <div class="modern-trust-badge">
+                    <div class="modern-trust-badge__icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="modern-trust-badge__info">
+                        <h4 class="modern-trust-badge__title">Quick Response</h4>
+                        <p class="modern-trust-badge__desc">We reply within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Expert Guidance -->
+            <div class="col-12 col-sm-6 col-lg-3 modern-contact-ribbon__col">
+                <div class="modern-trust-badge">
+                    <div class="modern-trust-badge__icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="modern-trust-badge__info">
+                        <h4 class="modern-trust-badge__title">Expert Guidance</h4>
+                        <p class="modern-trust-badge__desc">Talk to our specialists</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Customized Solutions -->
+            <div class="col-12 col-sm-6 col-lg-3 modern-contact-ribbon__col">
+                <div class="modern-trust-badge">
+                    <div class="modern-trust-badge__icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div class="modern-trust-badge__info">
+                        <h4 class="modern-trust-badge__title">Customized Solutions</h4>
+                        <p class="modern-trust-badge__desc">As per your business needs</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Trusted by Businesses -->
+            <div class="col-12 col-sm-6 col-lg-3 modern-contact-ribbon__col">
+                <div class="modern-trust-badge">
+                    <div class="modern-trust-badge__icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="modern-trust-badge__info">
+                        <h4 class="modern-trust-badge__title">Trusted by Businesses</h4>
+                        <p class="modern-trust-badge__desc">500+ happy clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =========================================================================
+     Google Map Section
+     ========================================================================= -->
 <section class="google-map google-map__contact">
     <iframe title="Jolly & Co. location map" src="<?= e(map_embed_url()) ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
 </section>

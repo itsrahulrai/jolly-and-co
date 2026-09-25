@@ -66,7 +66,7 @@ $waHello = whatsapp_link('Hello ' . $site['name'] . ', I would like to know more
                             <div class="footer-widget footer-widget--about">
                                 <div class="footer-widget__logo">
                                     <a href="index.php">
-                                        <img src="assets/images/jolly.png" width="220" alt="<?= e($site['name']) ?> Logo">
+                                        <img src="assets/images/jolly-2x.png?v=<?= filemtime(__DIR__ . '/../assets/images/jolly-2x.png') ?>" srcset="assets/images/jolly-2x.png?v=<?= filemtime(__DIR__ . '/../assets/images/jolly-2x.png') ?> 1x, assets/images/jolly.png?v=<?= filemtime(__DIR__ . '/../assets/images/jolly.png') ?> 2x" width="235" height="54" alt="<?= e($site['name']) ?> Logo">
                                     </a>
                                 </div>
                                 <p class="footer-widget__text">
@@ -233,8 +233,8 @@ $waHello = whatsapp_link('Hello ' . $site['name'] . ', I would like to know more
 <script src="assets/vendors/gsap/findox-split.js"></script>
 <!-- template js -->
 <script src="assets/js/findox.js"></script>
-<!-- site js (WhatsApp form) -->
-<script src="assets/js/custom.js"></script>
+<!-- site js (WhatsApp form & sticky nav) -->
+<script src="assets/js/custom.js?v=<?= filemtime(__DIR__ . '/../assets/js/custom.js') ?>"></script>
 <?php if (!empty($extra_js)): ?>
     <?= $extra_js ?>
 <?php endif; ?>

@@ -95,8 +95,9 @@ $schema = [
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/findox.css" />
     <!-- site overrides (WhatsApp button, extra responsive rules) -->
-    <link rel="stylesheet" href="assets/css/custom.css" />
-    <link rel="stylesheet" href="assets/css/service-pages.css" />
+    <link rel="stylesheet" href="assets/css/custom.css?v=<?= filemtime(__DIR__ . '/../assets/css/custom.css') ?>" />
+    <link rel="stylesheet" href="assets/css/service-pages.css?v=<?= filemtime(__DIR__ . '/../assets/css/service-pages.css') ?>" />
+    <link rel="stylesheet" href="assets/css/testimonials.css?v=<?= filemtime(__DIR__ . '/../assets/css/testimonials.css') ?>" />
     <?php if (!empty($extra_css)): ?>
         <?= $extra_css ?>
     <?php endif; ?>
@@ -141,12 +142,12 @@ $schema = [
                 </div>
             </div>
         </div>
-        <header class="main-header main-header--three sticky-header sticky-header--normal">
+        <header class="main-header main-header--three sticky-header sticky-header--one-page">
             <div class="container">
                 <div class="main-header__inner">
                     <div class="main-header__logo">
                         <a href="index.php">
-                            <img src="assets/images/jolly.png" alt="<?= e($site['name']) ?> logo" width="225">
+                            <img src="assets/images/jolly-2x.png?v=<?= filemtime(__DIR__ . '/../assets/images/jolly-2x.png') ?>" srcset="assets/images/jolly-2x.png?v=<?= filemtime(__DIR__ . '/../assets/images/jolly-2x.png') ?> 1x, assets/images/jolly.png?v=<?= filemtime(__DIR__ . '/../assets/images/jolly.png') ?> 2x" alt="<?= e($site['name']) ?> logo" width="255" height="58">
                         </a>
                     </div>
                     <nav class="main-header__nav main-menu">

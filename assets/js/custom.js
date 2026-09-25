@@ -70,4 +70,21 @@
     // clear error state while typing
     form.addEventListener("input", function (e) { if (e.target.classList) e.target.classList.remove("is-invalid"); });
   });
+
+  // Sticky Navbar: Smooth, guaranteed activation on scroll
+  function checkStickyNav() {
+    var scrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+    var stickyCloned = document.querySelector(".sticky-header--cloned");
+    if (!stickyCloned) return;
+    if (scrollY > 70) {
+      stickyCloned.classList.add("active");
+    } else {
+      stickyCloned.classList.remove("active");
+    }
+  }
+
+  window.addEventListener("scroll", checkStickyNav, { passive: true });
+  window.addEventListener("DOMContentLoaded", checkStickyNav);
+  window.addEventListener("load", checkStickyNav);
 })();
+
