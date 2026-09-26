@@ -382,7 +382,7 @@ include __DIR__ . '/includes/slider.php';
                             </div>
                             <p class="faq-one__text" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">Chartered accountancy, tax and compliance services tailored to your personal and business growth.</p>
                             <div class="faq-accordion findox-accordion" data-grp-name="findox-accordion">
-                                <div class="accordion" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
+                                <div class="accordion active" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
                                     <div class="accordion-title">
                                         <h4><span class="accordion-title__number"></span> What accounting & tax services do you offer?</h4>
                                         <span class="accordion-title__icon"></span>
@@ -393,7 +393,7 @@ include __DIR__ . '/includes/slider.php';
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion active" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
+                                <div class="accordion" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
                                     <div class="accordion-title">
                                         <h4><span class="accordion-title__number"></span> Should I choose the old or new tax regime?</h4>
                                         <span class="accordion-title__icon"></span>

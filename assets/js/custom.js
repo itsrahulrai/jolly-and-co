@@ -88,3 +88,27 @@
   window.addEventListener("load", checkStickyNav);
 })();
 
+
+// FAQ Accordion functionality
+(function() {
+  'use strict';
+  const accordions = document.querySelectorAll('.faq-accordion .accordion');
+  accordions.forEach(function(acc) {
+    const title = acc.querySelector('.accordion-title');
+    if (!title) return;
+    title.addEventListener('click', function(e) {
+      // Toggle active state
+      const isActive = acc.classList.contains('active');
+      // Close all accordions if you want only one open at a time
+      // Uncomment the next lines to enable exclusive open behavior
+      // document.querySelectorAll('.faq-accordion .accordion.active').forEach(function(openAcc) {
+      //   openAcc.classList.remove('active');
+      // });
+      if (!isActive) {
+        acc.classList.add('active');
+      } else {
+        acc.classList.remove('active');
+      }
+    });
+  });
+})();

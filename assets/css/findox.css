@@ -5746,9 +5746,9 @@ li.active .team-details__info__icon, li.active .team-details__info__title, li.ac
 }
 .blog-card-two__category {
   display: inline-block;
-  padding: 9.5px 21px;
-  margin-bottom: 21px;
-  font-size: 16px;
+  padding: 7px 16px;
+  margin-bottom: 18px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--findox-black4, #131111);
   text-transform: uppercase;
@@ -5800,8 +5800,8 @@ li.active .team-details__info__icon, li.active .team-details__info__title, li.ac
   color: var(--findox-primary, #f5c835);
 }
 .blog-card-two__title {
-  margin-bottom: 27px;
-  font-size: 22px;
+  margin-bottom: 22px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--findox-black2, #222222);
   line-height: 1.272;
