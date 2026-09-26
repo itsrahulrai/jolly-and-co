@@ -701,7 +701,7 @@
 .main-footer.main-footer--modern .main-footer__top,
 .main-footer .main-footer__top {
   padding-top: 28px !important;
-  padding-bottom: 0px !important;
+  padding-bottom: -10px !important;
 }
 
 .footer-cta-ribbon {

@@ -150,19 +150,17 @@ $waHello = whatsapp_link('Hello ' . $site['name'] . ', I would like to know more
             <div class="main-footer__bottom">
                 <div class="container">
                     <div class="main-footer__bottom-inner">
-                        <p class="main-footer__copyright">
-                            &copy; <?= date('Y') ?> <?= e($site['full_name']) ?>. All Rights Reserved.
+                       <p class="main-footer__copyright">
+                            &copy; <?= date('Y') ?> <?= e($site['name']) ?>. All Rights Reserved. | Developed By <a href="https://hoverbusinessservices.com/" target="_blank" rel="noopener noreferrer" style="color: inherit; ;">Hover Business Services LLP</a>
                         </p>
-                        <div class="main-footer__legal">
-                            <a href="about.php">Privacy Policy</a>
+                         <div class="main-footer__legal">
+                            <a href="privacy-policy.php">Privacy Policy</a>
                             <span class="main-footer__legal-sep">|</span>
-                            <a href="about.php">Terms &amp; Conditions</a>
+                            <a href="terms-and-conditions.php">Terms &amp; Conditions</a>
                             <span class="main-footer__legal-sep">|</span>
-                            <a href="index.php">Sitemap</a>
+                            <a href="sitemap.php">Sitemap</a>
                         </div>
-                        <a href="#" data-target="html" class="footer-scroll-top scroll-to-target" aria-label="Scroll to top">
-                            <i class="fas fa-arrow-up"></i>
-                        </a>
+                        
                     </div>
                 </div>
             </div>

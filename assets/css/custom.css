@@ -1434,7 +1434,7 @@ img { max-width: 100%; height: auto; }
 
 /* ----------------- 4-Column Footer Body ----------------- */
 .footer-main-body {
-  padding-bottom: 50px;
+  padding-bottom: -30px;
 }
 
 .footer-col {
@@ -1646,25 +1646,52 @@ img { max-width: 100%; height: auto; }
 
 /* ----------------- Bottom Copyright Bar ----------------- */
 .main-footer--modern .main-footer__bottom {
-  background: #ffffff !important;
-  border-top: 1px solid #edf2f7 !important;
+  background: #05223E !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
   padding: 18px 0 !important;
   position: relative !important;
   z-index: 2;
+  overflow: hidden; /* Contains the glowing wave effect inside the footer */
 }
 
-.main-footer__bottom-inner {
+/* Adds the green glowing wave effect on the right */
+.main-footer--modern .main-footer__bottom::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background: radial-gradient(circle at 100% 50%, rgba(107, 203, 18, 0.28) 0%, rgba(107, 203, 18, 0.05) 60%, transparent 80%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Ensures footer content stays above the background wave */
+.main-footer--modern .main-footer__bottom-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
 }
 
 .main-footer--modern .main-footer__copyright {
-  color: #64748b !important;
+  color: #ffffff !important;
   font-size: 13.5px !important;
+  font-weight: 600 !important;
   margin: 0 !important;
+}
+
+/* Ensures the Developed By link matches footer styling */
+.main-footer--modern .main-footer__copyright a {
+  color: inherit !important;
+}
+
+.main-footer--modern .main-footer__copyright a:hover {
+  color: #6BCB12 !important;
 }
 
 .main-footer__legal {
@@ -1675,7 +1702,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .main-footer__legal a {
-  color: #475569 !important;
+  color: #ffffff !important;
   text-decoration: none !important;
   font-weight: 500;
   transition: color 0.2s ease;
@@ -1686,7 +1713,8 @@ img { max-width: 100%; height: auto; }
 }
 
 .main-footer__legal-sep {
-  color: #cbd5e1;
+  color: #ffffff;
+  opacity: 0.6;
 }
 
 .footer-scroll-top {

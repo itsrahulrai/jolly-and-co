@@ -462,12 +462,9 @@ include __DIR__ . '/includes/slider.php';
                         <ul class="blog-card-two__meta list-unstyled">
                             <li>
                                 <span class="blog-card-two__meta__icon"><i class="icon-user"></i></span>
-                                <span>By: <a href="blogs.php">Admin</a></span>
+                                <span>By: <a href="blogs.php">Jolly & Co</a></span>
                             </li>
-                            <li>
-                                <span class="blog-card-two__meta__icon"><i class="icon-comment"></i></span>
-                                <a href="blogs.php">Comments (3)</a>
-                            </li>
+                           
                         </ul>
                         <h3 class="blog-card-two__title">
                             <a href="blogs.php">Smart Financial Planning for Business Growth.</a>
@@ -500,12 +497,9 @@ include __DIR__ . '/includes/slider.php';
                         <ul class="blog-card-two__meta list-unstyled">
                             <li>
                                 <span class="blog-card-two__meta__icon"><i class="icon-user"></i></span>
-                                <span>By: <a href="blogs.php">Admin</a></span>
+                                <span>By: <a href="blogs.php">Jolly & Co</a></span>
                             </li>
-                            <li>
-                                <span class="blog-card-two__meta__icon"><i class="icon-comment"></i></span>
-                                <a href="blogs.php">Comments (2)</a>
-                            </li>
+                           
                         </ul>
                         <h3 class="blog-card-two__title">
                             <a href="blogs.php">Important Tax Tips Every Business Should Know.</a>
@@ -538,12 +532,9 @@ include __DIR__ . '/includes/slider.php';
                         <ul class="blog-card-two__meta list-unstyled">
                             <li>
                                 <span class="blog-card-two__meta__icon"><i class="icon-user"></i></span>
-                                <span>By: <a href="blogs.php">Admin</a></span>
+                                <span>By: <a href="blogs.php">Jolly & Co</a></span>
                             </li>
-                            <li>
-                                <span class="blog-card-two__meta__icon"><i class="icon-comment"></i></span>
-                                <a href="blogs.php">Comments (4)</a>
-                            </li>
+                           
                         </ul>
                         <h3 class="blog-card-two__title">
                             <a href="blogs.php">Why Accurate Accounting Matters for Your Business.</a>

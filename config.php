@@ -6,7 +6,7 @@
  */
 
 $site = [
-    'name'       => 'Jolly & Co.',
+    'name'       => 'Jolly & Co',
     'full_name'  => 'Jolly & Co. Chartered Accountants',
     'tagline'    => 'Accounting, Taxation, Audit & Compliance in New Delhi',
 
