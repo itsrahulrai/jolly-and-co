@@ -154,8 +154,8 @@ $schema = [
                         <ul class="main-menu__list">
                             <li class="<?= $current === 'home' ? 'current' : '' ?>"><a href="index.php">Home</a></li>
                             <li class="<?= $current === 'about' ? 'current' : '' ?>"><a href="about.php">About</a></li>
-                            <li class="dropdown <?= ($current === 'services' || strpos($current, 'service') === 0) ? 'current' : '' ?>">
-                                <a href="services.php">Services</a>
+                            <li class="dropdown <?= (strpos($current, 'service') === 0) ? 'current' : '' ?>">
+                                <a href="service-accounting-bookkeeping.php">Services</a>
                                 <ul>
                                     <li><a href="service-accounting-bookkeeping.php">Accounting &amp; Bookkeeping</a></li>
                                     <li><a href="service-income-tax-gst.php">Income Tax &amp; GST</a></li>

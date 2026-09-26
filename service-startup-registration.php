@@ -13,7 +13,7 @@ $seo = [
     'path'        => 'service-startup-registration.php',
 ];
 $pageHeading = 'Startup & Company Registration';
-$breadcrumbParent = ['title' => 'Services', 'url' => 'services.php'];
+$breadcrumbParent = ['title' => 'Services', 'url' => 'service-accounting-bookkeeping.php'];
 
 $waServiceLink = whatsapp_link('Hello ' . $site['name'] . ', I would like to consult with you regarding Startup & Company Registration services.');
 
@@ -23,8 +23,8 @@ ob_start();
 <section class="service-details section-space">
     <div class="container">
         <div class="row gutter-y-50">
-            <!-- Left Sticky Sidebar -->
-            <div class="col-xl-4 col-lg-5">
+            <!-- Left Sticky Sidebar (on mobile displayed last) -->
+            <div class="col-xl-4 col-lg-5 order-2 order-lg-1">
                 <div class="service-details__sidebar">
                     <!-- All Services Navigation -->
                     <div class="service-details__pages" data-aos="fade-up" data-aos-duration="1200">
@@ -113,8 +113,8 @@ ob_start();
                 </div>
             </div>
 
-            <!-- Right Main Content Area -->
-            <div class="col-xl-8 col-lg-7">
+            <!-- Right Main Content Area (on mobile displayed first) -->
+            <div class="col-xl-8 col-lg-7 order-1 order-lg-2">
                 <div class="service-details__main">
                     <!-- Featured Hero Image -->
                     <div class="service-details__image" data-aos="fade-up" data-aos-duration="1300">

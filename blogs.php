@@ -26,32 +26,11 @@ $posts = [
         'excerpt'  => 'Everything you need to know about choosing between the old vs new tax regime, claiming deductions under 80C/80D, and timely filing.',
     ],
     [
-        'title'    => 'Essential Statutory Compliance Checklist for Early-Stage Startups',
-        'category' => 'Startup Advisory',
-        'date'     => 'August 12, 2026',
-        'image'    => 'assets/images/blog/blog-1-3.jpg',
-        'excerpt'  => 'From ROC annual filings and board meetings to TDS deduction and accounting setup — here is what founders must keep in order.',
-    ],
-    [
         'title'    => 'Understanding Statutory Audit: What Every Business Owner Should Expect',
         'category' => 'Audit & Assurance',
         'date'     => 'July 24, 2026',
         'image'    => 'assets/images/blog/blog-1-4.jpg',
         'excerpt'  => 'Demystifying the audit process, preparation of financial statements, internal financial controls, and working smoothly with your auditor.',
-    ],
-    [
-        'title'    => 'Best Practices for Clean Bookkeeping and Cash Flow Management',
-        'category' => 'Accounting',
-        'date'     => 'July 10, 2026',
-        'image'    => 'assets/images/blog/blog-1-5.jpg',
-        'excerpt'  => 'How accurate periodic bookkeeping protects your business margins, streamlines year-end taxation, and helps secure bank financing.',
-    ],
-    [
-        'title'    => 'TDS Provisions & Quarterly Return Filing: Rules for Deductors',
-        'category' => 'Tax Compliance',
-        'date'     => 'June 22, 2026',
-        'image'    => 'assets/images/blog/blog-1-6.jpg',
-        'excerpt'  => 'An overview of TDS rates on contractor payments, professional fees, rent, and the penalties for late deduction or deposition.',
     ],
 ];
 
@@ -92,7 +71,7 @@ ob_start();
                                     <?= e($post['title']) ?>
                                 </a>
                             </h3>
-                            <p style="color: #636363; font-size: 15px; line-height: 1.6; margin-bottom: 20px;">
+                            <p class="blog-card__text">
                                 <?= e($post['excerpt']) ?>
                             </p>
                             <a href="<?= e(whatsapp_link('Hello ' . $site['name'] . ', I would like to consult regarding "' . $post['title'] . '".')) ?>" target="_blank" rel="noopener" class="findox-btn findox-btn--base">
@@ -107,27 +86,6 @@ ob_start();
     </div>
 </section>
 
-<!-- Bottom CTA Band -->
-<section class="section-space pt-0">
-    <div class="container">
-        <div class="site-cta__box">
-            <div>
-                <h3 class="site-cta__title">Have a specific tax query or compliance question?</h3>
-                <div class="site-cta__text">
-                    <p>Speak directly with our chartered accountants in New Delhi. Fast responses via WhatsApp or call.</p>
-                </div>
-            </div>
-            <div class="site-cta__actions">
-                <a href="<?= e(whatsapp_link('Hello ' . $site['name'] . ', I have a question regarding taxation and compliance.')) ?>" target="_blank" rel="noopener" class="findox-btn">
-                    <span class="findox-btn__text"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</span>
-                </a>
-                <a href="contact.php" class="findox-btn findox-btn--white">
-                    <span class="findox-btn__text">Contact Us</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
 
 <?php
 $content = ob_get_clean();

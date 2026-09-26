@@ -6,7 +6,7 @@
 .modern-contact-section {
   position: relative;
   background: linear-gradient(135deg, #04213f 0%, #062b52 50%, #031c36 100%);
-  padding: 85px 0 75px;
+  padding: 135px 0 135px;
   overflow: hidden;
   color: #ffffff;
 }
@@ -545,6 +545,9 @@
 }
 
 @media (max-width: 991.98px) {
+  .modern-contact-section {
+    padding: 95px 0 95px;
+  }
   .modern-contact-hero {
     margin-bottom: 40px;
     padding-right: 0;
@@ -559,7 +562,7 @@
 
 @media (max-width: 575.98px) {
   .modern-contact-section {
-    padding: 50px 0 40px;
+    padding: 70px 0 70px;
   }
   .modern-contact-hero__title {
     font-size: 28px;

@@ -296,13 +296,13 @@ include __DIR__ . '/includes/slider.php';
                 <div class="funfact__item">
                     <div class="funfact__item__shape"></div>
                     <div class="funfact__item__icon-box">
-                        <span class="funfact__item__icon"><i class="icon-folder"></i></span>
+                        <span class="funfact__item__icon"><i class="icon-clock"></i></span>
                     </div>
                     <div class="funfact__item__content">
                         <h3 class="funfact__item__count count-box">
-                            <span class="count-text" data-stop="285" data-speed="1500">0</span><span>k+</span>
+                            <span class="count-text" data-stop="15" data-speed="1500">0</span><span>+</span>
                         </h3>
-                        <p class="funfact__item__title">Projects Succefull</p>
+                        <p class="funfact__item__title">Years Experience</p>
                     </div>
                 </div>
             </div>
@@ -315,9 +315,9 @@ include __DIR__ . '/includes/slider.php';
                     </div>
                     <div class="funfact__item__content">
                         <h3 class="funfact__item__count count-box">
-                            <span class="count-text" data-stop="83" data-speed="1500">0</span><span>k+</span>
+                            <span class="count-text" data-stop="95" data-speed="1500">0</span><span>+</span>
                         </h3>
-                        <p class="funfact__item__title">Happy Clients</p>
+                        <p class="funfact__item__title">Corporate Clients</p>
                     </div>
                 </div>
             </div>
@@ -326,13 +326,13 @@ include __DIR__ . '/includes/slider.php';
                 <div class="funfact__item">
                     <div class="funfact__item__shape"></div>
                     <div class="funfact__item__icon-box">
-                        <span class="funfact__item__icon"><i class="icon-technical-team"></i></span>
+                        <span class="funfact__item__icon"><i class="icon-stats-2"></i></span>
                     </div>
                     <div class="funfact__item__content">
                         <h3 class="funfact__item__count count-box">
-                            <span class="count-text" data-stop="195" data-speed="1500">0</span><span>k+</span>
+                            <span class="count-text" data-stop="99" data-speed="1500">0</span><span>%</span>
                         </h3>
-                        <p class="funfact__item__title">Team Support</p>
+                        <p class="funfact__item__title">Compliance Rate</p>
                     </div>
                 </div>
             </div>
@@ -341,13 +341,13 @@ include __DIR__ . '/includes/slider.php';
                 <div class="funfact__item">
                     <div class="funfact__item__shape"></div>
                     <div class="funfact__item__icon-box">
-                        <span class="funfact__item__icon"><i class="icon-trophy"></i></span>
+                        <span class="funfact__item__icon"><i class="icon-financial-consultant"></i></span>
                     </div>
                     <div class="funfact__item__content">
                         <h3 class="funfact__item__count count-box">
-                            <span class="count-text" data-stop="366" data-speed="1500">0</span><span>+</span>
+                            <span class="count-text" data-stop="20" data-speed="1500">0</span><span>+</span>
                         </h3>
-                        <p class="funfact__item__title">Awards Winning</p>
+                        <p class="funfact__item__title">CA &amp; Tax Experts</p>
                     </div>
                 </div>
             </div>

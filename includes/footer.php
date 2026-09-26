@@ -85,7 +85,7 @@ $waHello = whatsapp_link('Hello ' . $site['name'] . ', I would like to know more
                                 <ul class="list-unstyled footer-links-list">
                                     <li><a href="index.php"><span>Home</span> <i class="fas fa-chevron-right"></i></a></li>
                                     <li><a href="about.php"><span>About Us</span> <i class="fas fa-chevron-right"></i></a></li>
-                                    <li><a href="services.php"><span>Services</span> <i class="fas fa-chevron-right"></i></a></li>
+                                    <li><a href="service-accounting-bookkeeping.php"><span>Services</span> <i class="fas fa-chevron-right"></i></a></li>
                                     <li><a href="blogs.php"><span>Blogs</span> <i class="fas fa-chevron-right"></i></a></li>
                                     <li><a href="contact.php"><span>Contact</span> <i class="fas fa-chevron-right"></i></a></li>
                                     <li><a href="<?= e(map_link()) ?>" target="_blank" rel="noopener"><span>Find Us on Map</span> <i class="fas fa-chevron-right"></i></a></li>
@@ -100,7 +100,7 @@ $waHello = whatsapp_link('Hello ' . $site['name'] . ', I would like to know more
                                 <ul class="list-unstyled footer-links-list">
                                     <?php foreach ($services as $s): ?>
                                         <li>
-                                            <a href="services.php#<?= e($s['slug']) ?>">
+                                            <a href="<?= e($s['url']) ?>">
                                                 <span><?= e($s['title']) ?></span>
                                                 <i class="fas fa-chevron-right"></i>
                                             </a>
@@ -158,7 +158,7 @@ $waHello = whatsapp_link('Hello ' . $site['name'] . ', I would like to know more
                             <span class="main-footer__legal-sep">|</span>
                             <a href="about.php">Terms &amp; Conditions</a>
                             <span class="main-footer__legal-sep">|</span>
-                            <a href="services.php">Sitemap</a>
+                            <a href="index.php">Sitemap</a>
                         </div>
                         <a href="#" data-target="html" class="footer-scroll-top scroll-to-target" aria-label="Scroll to top">
                             <i class="fas fa-arrow-up"></i>

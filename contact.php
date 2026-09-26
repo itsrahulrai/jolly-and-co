@@ -202,66 +202,7 @@ ob_start();
     </div>
 </section>
 
-<!-- =========================================================================
-     Bottom Trust Ribbon (4 Features)
-     ========================================================================= -->
-<section class="modern-contact-ribbon">
-    <div class="container">
-        <div class="row g-0">
-            <!-- 1. Quick Response -->
-            <div class="col-12 col-sm-6 col-lg-3 modern-contact-ribbon__col">
-                <div class="modern-trust-badge">
-                    <div class="modern-trust-badge__icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <div class="modern-trust-badge__info">
-                        <h4 class="modern-trust-badge__title">Quick Response</h4>
-                        <p class="modern-trust-badge__desc">We reply within 24 hours</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- 2. Expert Guidance -->
-            <div class="col-12 col-sm-6 col-lg-3 modern-contact-ribbon__col">
-                <div class="modern-trust-badge">
-                    <div class="modern-trust-badge__icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <div class="modern-trust-badge__info">
-                        <h4 class="modern-trust-badge__title">Expert Guidance</h4>
-                        <p class="modern-trust-badge__desc">Talk to our specialists</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 3. Customized Solutions -->
-            <div class="col-12 col-sm-6 col-lg-3 modern-contact-ribbon__col">
-                <div class="modern-trust-badge">
-                    <div class="modern-trust-badge__icon">
-                        <i class="fas fa-cog"></i>
-                    </div>
-                    <div class="modern-trust-badge__info">
-                        <h4 class="modern-trust-badge__title">Customized Solutions</h4>
-                        <p class="modern-trust-badge__desc">As per your business needs</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 4. Trusted by Businesses -->
-            <div class="col-12 col-sm-6 col-lg-3 modern-contact-ribbon__col">
-                <div class="modern-trust-badge">
-                    <div class="modern-trust-badge__icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="modern-trust-badge__info">
-                        <h4 class="modern-trust-badge__title">Trusted by Businesses</h4>
-                        <p class="modern-trust-badge__desc">500+ happy clients</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- =========================================================================
      Google Map Section
