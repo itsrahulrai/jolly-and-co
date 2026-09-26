@@ -161,7 +161,7 @@
      LAYOUT
   ========================= */
 
-  --section-space: 120px;
+  --section-space: 80px;
 }
 /*--------------------------------------------------------------
 # Utility
@@ -5830,6 +5830,21 @@ li.active .team-details__info__icon, li.active .team-details__info__title, li.ac
 .blog-card-two:hover .findox-btn::after {
   width: 100%;
   left: 0px;
+}
+.blog-card-two .findox-btn {
+  padding: 8px 14px;
+}
+.blog-card-two .findox-btn__text {
+  font-size: 13px;
+}
+.blog-card-two .findox-btn__icon-box {
+  width: 30px;
+  height: 30px;
+}
+.blog-card-two .findox-btn__icon {
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
 }
 .blog-card-two:hover .findox-btn__text {
   color: var(--findox-black4, #131111);
