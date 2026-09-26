@@ -17,6 +17,7 @@ $site = [
     'email'      => 'info@jollyandco.in',           // TODO: replace with your real email
     'address'    => 'A-8/61, Kalkaji Extension, Block A 8, Kalkaji Extension, Kalkaji, New Delhi, Delhi 110019',
     'address_short' => 'Kalkaji Extension, New Delhi 110019',
+    'map_embed' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.455324602257!2d77.2614645!3d28.526030799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce15dc0000079%3A0xefa40c982228c00c!2sJolly%20%26%20Co.%20Chartered%20Accountants!5e0!3m2!1sen!2sin!4v1790410154688!5m2!1sen!2sin',
     'hours'      => 'Mon - Sat: 10:00 AM - 7:00 PM',  // TODO: confirm office hours
     'locality'   => 'Kalkaji',
     'region'     => 'Delhi',
@@ -40,6 +41,7 @@ $site = [
     'default_description' => 'Jolly & Co. is a chartered accountancy firm in Kalkaji, New Delhi offering accounting, income tax & GST, audit, business advisory, compliance and startup registration services.',
     'default_keywords'    => 'chartered accountant Delhi, CA firm Kalkaji, GST filing, income tax return, audit services, startup registration, bookkeeping, business advisory',
     'og_image'            => 'assets/images/jolly.png',
+
 ];
 
 /** Services — used on the home page, services page, header menu and footer. */
@@ -121,7 +123,8 @@ function whatsapp_link($text = '') {
 
 function map_embed_url() {
     global $site;
-    return 'https://www.google.com/maps?q=' . rawurlencode($site['address']) . '&output=embed';
+
+    return $site['map_embed'];
 }
 
 function map_link() {

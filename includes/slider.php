@@ -43,7 +43,7 @@ $slides = [
 
                 <picture class="hero-image-slide__pic">
                     <!-- Mobile Image (screens up to 767px) -->
-                    <source media="(max-width: 767.98px)" srcset="<?= e($slide['mobile']) ?>">
+                    <source media="(max-width: 767.98px)" srcset="<?= e($slide['desktop']) ?>">
                     <!-- Desktop Image (screens 768px and up) -->
                     <img src="<?= e($slide['desktop']) ?>" alt="<?= e($slide['alt']) ?>" class="hero-image-slide__img" loading="eager">
                 </picture>
