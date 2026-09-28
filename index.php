@@ -178,7 +178,7 @@ include __DIR__ . '/includes/slider.php';
                     <!-- Left: Client Profile Card -->
                     <div class="testimonials-card__profile">
                         <div class="testimonials-card__avatar-box">
-                            <img src="assets/images/team/team-2-1.jpg" alt="Pooja Agarwal" class="testimonials-card__avatar-img">
+                            <img src="assets/images/testimonals/testimonial-woman.png?v=<?= filemtime(__DIR__ . '/assets/images/testimonals/testimonial-woman.png') ?>" alt="Pooja Agarwal" class="testimonials-card__avatar-img">
                             <span class="testimonials-card__avatar-check"><i class="fas fa-check"></i></span>
                             <span class="testimonials-card__verified-badge"><i class="fas fa-check-circle"></i> Verified Client</span>
                         </div>
@@ -214,7 +214,7 @@ include __DIR__ . '/includes/slider.php';
                     <!-- Left: Client Profile Card -->
                     <div class="testimonials-card__profile">
                         <div class="testimonials-card__avatar-box">
-                            <img src="assets/images/team/team-2-2.jpg" alt="Rajesh Sharma" class="testimonials-card__avatar-img">
+                            <img src="assets/images/testimonals/testimonial-man.png?v=<?= filemtime(__DIR__ . '/assets/images/testimonals/testimonial-man.png') ?>" alt="Rajesh Sharma" class="testimonials-card__avatar-img">
                             <span class="testimonials-card__avatar-check"><i class="fas fa-check"></i></span>
                             <span class="testimonials-card__verified-badge"><i class="fas fa-check-circle"></i> Verified Client</span>
                         </div>
@@ -251,7 +251,7 @@ include __DIR__ . '/includes/slider.php';
                     <!-- Left: Client Profile Card -->
                     <div class="testimonials-card__profile">
                         <div class="testimonials-card__avatar-box">
-                            <img src="assets/images/team/team-2-3.jpg" alt="Vikram Malhotra" class="testimonials-card__avatar-img">
+                            <img src="assets/images/testimonals/testimonial-man.png?v=<?= filemtime(__DIR__ . '/assets/images/testimonals/testimonial-man.png') ?>" alt="Vikram Malhotra" class="testimonials-card__avatar-img">
                             <span class="testimonials-card__avatar-check"><i class="fas fa-check"></i></span>
                             <span class="testimonials-card__verified-badge"><i class="fas fa-check-circle"></i> Verified Client</span>
                         </div>
@@ -447,7 +447,7 @@ include __DIR__ . '/includes/slider.php';
                <div class="faq-one__blogs">
 
                 <div class="blog-card-two">
-                    <div class="blog-card-two__image" style="background-image: url(assets/images/blog/blog-2-1.jpg)">
+                    <div class="blog-card-two__image" style="background-image: url(assets/images/blog/blog-2-1.jpg?v=<?= filemtime(__DIR__ . '/assets/images/blog/blog-2-1.jpg') ?>)">
                         <div class="blog-card-two__date">
                             <span class="blog-card-two__date__day">22</span>
                             <span class="blog-card-two__date__month">Apr</span>
@@ -482,7 +482,7 @@ include __DIR__ . '/includes/slider.php';
                 </div>
 
                 <div class="blog-card-two">
-                    <div class="blog-card-two__image" style="background-image: url(assets/images/blog/blog-2-2.jpg)">
+                    <div class="blog-card-two__image" style="background-image: url(assets/images/blog/blog-2-2.jpg?v=<?= filemtime(__DIR__ . '/assets/images/blog/blog-2-2.jpg') ?>)">
                         <div class="blog-card-two__date">
                             <span class="blog-card-two__date__day">15</span>
                             <span class="blog-card-two__date__month">Apr</span>
@@ -517,7 +517,7 @@ include __DIR__ . '/includes/slider.php';
                 </div>
 
                 <div class="blog-card-two">
-                    <div class="blog-card-two__image" style="background-image: url(assets/images/blog/blog-2-3.jpg)">
+                    <div class="blog-card-two__image" style="background-image: url(assets/images/blog/blog-2-3.jpg?v=<?= filemtime(__DIR__ . '/assets/images/blog/blog-2-3.jpg') ?>)">
                         <div class="blog-card-two__date">
                             <span class="blog-card-two__date__day">08</span>
                             <span class="blog-card-two__date__month">Apr</span>

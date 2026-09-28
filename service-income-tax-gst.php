@@ -118,7 +118,7 @@ ob_start();
                 <div class="service-details__main">
                     <!-- Featured Hero Image -->
                     <div class="service-details__image" data-aos="fade-up" data-aos-duration="1300">
-                        <img src="assets/images/services/service-d-2.jpg" alt="Income Tax and GST Services - Jolly &amp; Co." class="service-details__hero-img" loading="lazy">
+                        <img src="assets/images/services/service-d-2.jpg?v=<?= filemtime(__DIR__ . '/assets/images/services/service-d-2.jpg') ?>" alt="Income Tax and GST Services - Jolly &amp; Co." class="service-details__hero-img" loading="lazy">
                     </div>
 
                     <!-- Main Service Content -->
@@ -151,35 +151,35 @@ ob_start();
                             <p class="service-details__subtext">Our end-to-end direct and indirect taxation deliverables include:</p>
                             <div class="service-details__scope-grid">
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-file-invoice"></i></span>
                                     <span class="service-details__scope-text">Income Tax Returns (ITR-1 to ITR-7) for salaried, HNIs, firms &amp; corporates</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-calculator"></i></span>
                                     <span class="service-details__scope-text">Comparative simulation between Old and New Tax Regimes to maximize savings</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-calendar-alt"></i></span>
                                     <span class="service-details__scope-text">Advance tax computation, quarterly installment planning &amp; interest minimization</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-chart-line"></i></span>
                                     <span class="service-details__scope-text">Capital gains tax computation on real estate, listed shares, mutual funds &amp; crypto</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-clipboard-check"></i></span>
                                     <span class="service-details__scope-text">GST registration, monthly GSTR-1 &amp; GSTR-3B filings, and GSTR-9/9C reconciliation</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-exchange-alt"></i></span>
                                     <span class="service-details__scope-text">Complete Input Tax Credit (ITC) reconciliation with GSTR-2B to prevent loss</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-file-signature"></i></span>
                                     <span class="service-details__scope-text">TDS/TCS returns (Form 24Q, 26Q, 27Q), 26AS/AIS reconciliation, and Form 15CA/15CB</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-balance-scale"></i></span>
                                     <span class="service-details__scope-text">Drafting replies to scrutiny notices, 148 reassessment, and GST demand notices</span>
                                 </div>
                             </div>

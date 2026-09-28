@@ -118,7 +118,7 @@ ob_start();
                 <div class="service-details__main">
                     <!-- Featured Hero Image -->
                     <div class="service-details__image" data-aos="fade-up" data-aos-duration="1300">
-                        <img src="assets/images/services/service-d-1.jpg" alt="Accounting and Bookkeeping Services - Jolly &amp; Co." class="service-details__hero-img" loading="lazy">
+                        <img src="assets/images/services/service-d-1.jpg?v=<?= filemtime(__DIR__ . '/assets/images/services/service-d-1.jpg') ?>" alt="Accounting and Bookkeeping Services - Jolly &amp; Co." class="service-details__hero-img" loading="lazy">
                     </div>
 
                     <!-- Main Service Content -->
@@ -151,35 +151,35 @@ ob_start();
                             <p class="service-details__subtext">When you partner with Jolly &amp; Co., we take end-to-end accountability for every aspect of your accounts:</p>
                             <div class="service-details__scope-grid">
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-book-open"></i></span>
                                     <span class="service-details__scope-text">Daily and weekly general ledger and voucher processing</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-university"></i></span>
                                     <span class="service-details__scope-text">Bank account, corporate credit card &amp; payment gateway reconciliations</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-file-invoice-dollar"></i></span>
                                     <span class="service-details__scope-text">Accounts Payable (AP) and Accounts Receivable (AR) age-wise tracking</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-chart-line"></i></span>
                                     <span class="service-details__scope-text">Monthly Trial Balance finalization, Profit &amp; Loss, and Balance Sheet prep</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-file-alt"></i></span>
                                     <span class="service-details__scope-text">Fixed Asset Register (FAR) compilation and depreciation accounting</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-users"></i></span>
                                     <span class="service-details__scope-text">Payroll accounting, salary disbursement reconciliation &amp; reimbursements</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-box-open"></i></span>
                                     <span class="service-details__scope-text">Inventory &amp; stock register reconciliation aligned with GST records</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-chart-pie"></i></span>
                                     <span class="service-details__scope-text">Customized Management Information System (MIS) reports for directors</span>
                                 </div>
                             </div>

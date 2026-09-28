@@ -52,7 +52,7 @@ ob_start();
                 <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="<?= 100 * (($i % 3) + 1) ?>">
                     <div class="blog-card">
                         <div class="blog-card__image">
-                            <img src="<?= e($post['image']) ?>" alt="<?= e($post['title']) ?>" loading="lazy">
+                            <img src="<?= e($post['image']) ?>?v=<?= file_exists(__DIR__ . '/' . $post['image']) ? filemtime(__DIR__ . '/' . $post['image']) : time() ?>" alt="<?= e($post['title']) ?>" loading="lazy">
                             <a href="<?= e(whatsapp_link('Hello ' . $site['name'] . ', I read your blog post on "' . $post['title'] . '" and have a question.')) ?>" target="_blank" rel="noopener" class="blog-card__image__link" aria-label="<?= e($post['title']) ?>"></a>
                         </div>
                         <div class="blog-card__content">

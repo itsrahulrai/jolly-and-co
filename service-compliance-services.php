@@ -118,7 +118,7 @@ ob_start();
                 <div class="service-details__main">
                     <!-- Featured Hero Image -->
                     <div class="service-details__image" data-aos="fade-up" data-aos-duration="1300">
-                        <img src="assets/images/services/service-d-5.jpg" alt="Corporate Compliance Services - Jolly &amp; Co." class="service-details__hero-img" loading="lazy">
+                        <img src="assets/images/services/service-d-5.jpg?v=<?= filemtime(__DIR__ . '/assets/images/services/service-d-5.jpg') ?>" alt="Corporate Compliance Services - Jolly &amp; Co." class="service-details__hero-img" loading="lazy">
                     </div>
 
                     <!-- Main Service Content -->
@@ -151,35 +151,35 @@ ob_start();
                             <p class="service-details__subtext">Our corporate and statutory secretarial scope includes:</p>
                             <div class="service-details__scope-grid">
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-building"></i></span>
                                     <span class="service-details__scope-text">MCA / ROC Annual Filings: Form AOC-4 (Financials) &amp; Form MGT-7/7A (Annual Returns)</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-id-card"></i></span>
                                     <span class="service-details__scope-text">Director Identification Number (DIN) annual e-KYC: Form DIR-3 KYC and web verification</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-file-signature"></i></span>
                                     <span class="service-details__scope-text">Drafting board resolutions, notices, minutes of Board Meetings and AGM records</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-users-cog"></i></span>
                                     <span class="service-details__scope-text">Director appointment, resignation, registered office shifting &amp; share transfer filings</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-chart-line"></i></span>
                                     <span class="service-details__scope-text">Increase in authorized capital, alteration of MOA/AOA, and change in business objectives</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-user-shield"></i></span>
                                     <span class="service-details__scope-text">Employees’ Provident Fund (PF) and Employee State Insurance (ESI) monthly challans &amp; returns</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-file-invoice-dollar"></i></span>
                                     <span class="service-details__scope-text">Professional Tax (PT) registration, periodic payments, and annual return filings</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-clipboard-list"></i></span>
                                     <span class="service-details__scope-text">Mandatory disclosures: Form DPT-3 (Return of Deposits) and MSME Form 1</span>
                                 </div>
                             </div>

@@ -118,7 +118,7 @@ ob_start();
                 <div class="service-details__main">
                     <!-- Featured Hero Image -->
                     <div class="service-details__image" data-aos="fade-up" data-aos-duration="1300">
-                        <img src="assets/images/services/service-d-3.jpg" alt="Audit and Assurance Services - Jolly &amp; Co." class="service-details__hero-img" loading="lazy">
+                        <img src="assets/images/services/service-d-3.jpg?v=<?= filemtime(__DIR__ . '/assets/images/services/service-d-3.jpg') ?>" alt="Audit and Assurance Services - Jolly &amp; Co." class="service-details__hero-img" loading="lazy">
                     </div>
 
                     <!-- Main Service Content -->
@@ -151,35 +151,35 @@ ob_start();
                             <p class="service-details__subtext">Our specialized audit and assurance engagements cover:</p>
                             <div class="service-details__scope-grid">
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-stamp"></i></span>
                                     <span class="service-details__scope-text">Statutory audits under the Companies Act, 2013 for private and public companies</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-file-contract"></i></span>
                                     <span class="service-details__scope-text">Tax audits under Section 44AB of the Income Tax Act, 1961 (Form 3CA/3CB and Form 3CD)</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-shield-alt"></i></span>
                                     <span class="service-details__scope-text">Internal audits, internal financial control (IFC) testing &amp; SOP verification</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-boxes"></i></span>
                                     <span class="service-details__scope-text">Physical stock, warehouse inventory &amp; fixed asset verification audits</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-search-dollar"></i></span>
                                     <span class="service-details__scope-text">Due diligence audits for mergers, acquisitions, venture investments, or joint ventures</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-user-shield"></i></span>
                                     <span class="service-details__scope-text">Special-purpose audits, forensic reviews, and bank loan utilization verification</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-chart-bar"></i></span>
                                     <span class="service-details__scope-text">Management audits &amp; operational efficiency reviews for process optimization</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-award"></i></span>
                                     <span class="service-details__scope-text">Chartered Accountant certifications (net worth, turnover, remittances) with UDIN</span>
                                 </div>
                             </div>

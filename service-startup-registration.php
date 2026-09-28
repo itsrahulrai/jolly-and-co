@@ -118,7 +118,7 @@ ob_start();
                 <div class="service-details__main">
                     <!-- Featured Hero Image -->
                     <div class="service-details__image" data-aos="fade-up" data-aos-duration="1300">
-                        <img src="assets/images/services/service-d-6.jpg" alt="Startup and Company Registration Services - Jolly &amp; Co." class="service-details__hero-img" loading="lazy">
+                        <img src="assets/images/services/service-d-6.jpg?v=<?= filemtime(__DIR__ . '/assets/images/services/service-d-6.jpg') ?>" alt="Startup and Company Registration Services - Jolly &amp; Co." class="service-details__hero-img" loading="lazy">
                     </div>
 
                     <!-- Main Service Content -->
@@ -151,35 +151,35 @@ ob_start();
                             <p class="service-details__subtext">Our complete startup incorporation and launch suite includes:</p>
                             <div class="service-details__scope-grid">
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-building"></i></span>
                                     <span class="service-details__scope-text">Private Limited Company (Pvt Ltd) incorporation through SPICe+ MCA portal</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-handshake"></i></span>
                                     <span class="service-details__scope-text">Limited Liability Partnership (LLP) registration and custom LLP Agreement drafting</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-store"></i></span>
                                     <span class="service-details__scope-text">One Person Company (OPC), Section 8 NGO, and Partnership Firm registration</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-key"></i></span>
                                     <span class="service-details__scope-text">Class 3 Digital Signature Certificates (DSC) and Director Identification Number (DIN)</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-search"></i></span>
                                     <span class="service-details__scope-text">Name approval search, trademark conflict check &amp; reservation on MCA RUN</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-file-contract"></i></span>
                                     <span class="service-details__scope-text">Drafting custom Memorandum of Association (MOA) &amp; Articles of Association (AOA)</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-rocket"></i></span>
                                     <span class="service-details__scope-text">DPIIT Startup India recognition, 80-IAC tax holiday guidance &amp; angel tax advice</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-briefcase"></i></span>
                                     <span class="service-details__scope-text">Post-incorporation kit: PAN, TAN, GST, MSME/Udyam, Bank account &amp; Form INC-20A</span>
                                 </div>
                             </div>

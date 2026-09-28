@@ -118,7 +118,7 @@ ob_start();
                 <div class="service-details__main">
                     <!-- Featured Hero Image -->
                     <div class="service-details__image" data-aos="fade-up" data-aos-duration="1300">
-                        <img src="assets/images/services/service-d-4.jpg" alt="Business Advisory Services - Jolly &amp; Co." class="service-details__hero-img" loading="lazy">
+                        <img src="assets/images/services/service-d-4.jpg?v=<?= filemtime(__DIR__ . '/assets/images/services/service-d-4.jpg') ?>" alt="Business Advisory Services - Jolly &amp; Co." class="service-details__hero-img" loading="lazy">
                     </div>
 
                     <!-- Main Service Content -->
@@ -151,35 +151,35 @@ ob_start();
                             <p class="service-details__subtext">Our business advisory and Virtual CFO services encompass:</p>
                             <div class="service-details__scope-grid">
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-user-tie"></i></span>
                                     <span class="service-details__scope-text">Virtual CFO services: ongoing executive financial leadership without C-suite overhead</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-hand-holding-usd"></i></span>
                                     <span class="service-details__scope-text">Cash flow forecasting, working capital optimization &amp; liquidity management</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-file-invoice"></i></span>
                                     <span class="service-details__scope-text">Preparation of CMA data, Detailed Project Reports (DPR), and bank loan proposals</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-sitemap"></i></span>
                                     <span class="service-details__scope-text">Corporate restructuring: optimal holding structures, subsidiaries &amp; tax efficiencies</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-chart-line"></i></span>
                                     <span class="service-details__scope-text">Annual budgeting, financial variance analysis, and operational cost-reduction</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-calculator"></i></span>
                                     <span class="service-details__scope-text">Unit economics modeling: product margin analysis and break-even thresholds</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-coins"></i></span>
                                     <span class="service-details__scope-text">Business valuation reports (DCF, Net Asset Value) for investments or equity splits</span>
                                 </div>
                                 <div class="service-details__scope-item">
-                                    <span class="service-details__scope-check"><i class="fas fa-check"></i></span>
+                                    <span class="service-details__scope-check"><i class="fas fa-handshake"></i></span>
                                     <span class="service-details__scope-text">Financial due diligence for mergers, acquisitions, and strategic partnerships</span>
                                 </div>
                             </div>
