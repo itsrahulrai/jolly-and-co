@@ -207,9 +207,8 @@ ob_start();
 <!-- =========================================================================
      Google Map Section
      ========================================================================= -->
-<section class="
-">
-    <iframe title="Jolly & Co. location map" src="<?= e(map_embed_url()) ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+<section class="google-map google-map__contact">
+    <iframe title="Jolly &amp; Co. Chartered Accountants location map" src="<?= e(map_embed_url()) ?>" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
 </section>
 
 <?php

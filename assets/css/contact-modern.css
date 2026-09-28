@@ -593,11 +593,43 @@
 }
 
 /* Add spacing between Contact hero and Google Map */
-.modern-contact-section { margin-bottom: 40px; }
-
-/* Full‑width Google Map */
-.google-map iframe {
-  width: 100%;
-  height: 450px; /* keep original height */
-  border: 0;
+.modern-contact-section { 
+  margin-bottom: 35px; 
 }
+
+/* ==============================================================
+   Modern Full-Width Google Map
+   ============================================================== */
+.google-map__contact {
+  position: relative;
+  overflow: hidden;
+  margin-top: 15px;
+  background-color: #e5e9f0 !important;
+  border-top: 1px solid #e2e8f0;
+}
+
+.google-map__contact iframe,
+.google-map iframe {
+  width: 100% !important;
+  height: 480px !important;
+  border: 0 !important;
+  display: block !important;
+  position: relative !important;
+  mix-blend-mode: normal !important;
+  filter: none !important;
+}
+
+@media (max-width: 991.98px) {
+  .google-map__contact iframe,
+  .google-map iframe {
+    height: 380px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .google-map__contact iframe,
+  .google-map iframe {
+    height: 320px !important;
+  }
+}
+
