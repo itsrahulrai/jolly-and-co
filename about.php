@@ -38,14 +38,14 @@ $steps = [
                 <div class="about-three__content">
                     <div class="about-three__content__left">
                         <div class="sec-title">
-                            <div class="sec-title__top" style="--tagline-bg: #ECF5F4">
-                                <img src="assets/images/shapes/sec-title-shape-1-1.png" alt="" class="sec-title__shape">
-                                <p class="sec-title__tagline">Who We Are</p>
+                            <div class="sec-title__top">
+                                <span class="sec-title__dot"></span>
+                                <p class="sec-title__tagline">About Us</p>
                             </div>
-                            <h2 class="sec-title__title bw-split-in-up" style="--title-color: #000000">A Chartered Accountancy Practice Built on Trust.</h2>
+                            <h2 class="sec-title__title bw-split-in-up" style="--title-color: #082e54">A Chartered Accountancy Practice Built on Trust.</h2>
                         </div>
-                        <p class="about-three__text"><?= e($site['full_name']) ?> is located in <?= e($site['locality']) ?>, New Delhi. We support individuals, professionals, startups and established businesses with accounting, taxation, audit, compliance and advisory services.</p>
-                        <p class="about-three__text">Our aim is simple: take the stress out of finance and compliance so you can concentrate on your work. We keep our advice practical, our communication clear and our fees transparent.</p>
+                        <p class="about-three__text">Jolly &amp; Co. Chartered Accountants is a professional chartered accountant in Kalkaji, supporting individuals and businesses with clear, structured financial and tax solutions. Our services include income tax consultancy, GST return filing, TDS returns, tax audits, statutory audits, accounting services, company registration, and business tax consultancy across South Delhi.</p>
+                        <p class="about-three__text">With years of dedicated professional presence, we focus on timely assistance, practical guidance, and smooth compliance. Many clients appreciate our responsive approach and attention to detail. For dependable accounting and taxation support, connect with an accountant in Kalkaji and take a more organized approach to your financial requirements.</p>
                         <div class="about-three__button">
                             <a href="contact.php" class="findox-btn">
                                 <span class="findox-btn__text">Talk to Us</span>
@@ -55,7 +55,7 @@ $steps = [
                     </div>
                     <div class="about-three__content__image">
                         <img src="assets/images/about/about-3-2.jpg" alt="Client meeting" class="about-three__content__img">
-                        <img src="assets/images/shapes/about-badge-3-1.png" alt="" class="about-three__content__badge">
+                        <img src="assets/images/shapes/about-badge-4-1.png?v=<?= filemtime(__DIR__ . '/assets/images/shapes/about-badge-4-1.png') ?>" alt="5+ Years Experience" class="about-three__content__badge" width="195" height="195">
                     </div>
                 </div>
             </div>

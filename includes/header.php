@@ -70,9 +70,10 @@ $schema = [
     <script type="application/ld+json"><?= json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?></script>
 
     <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="shortcut icon" href="favicon.ico?v=<?= filemtime(__DIR__ . '/../favicon.ico') ?>" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png?v=<?= filemtime(__DIR__ . '/../assets/images/favicons/apple-touch-icon.png') ?>" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png?v=<?= filemtime(__DIR__ . '/../assets/images/favicons/favicon-32x32.png') ?>" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png?v=<?= filemtime(__DIR__ . '/../assets/images/favicons/favicon-16x16.png') ?>" />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
 
     <!-- fonts -->
@@ -93,7 +94,7 @@ $schema = [
     <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
     <!-- template styles -->
-    <link rel="stylesheet" href="assets/css/findox.css" />
+    <link rel="stylesheet" href="assets/css/findox.css?v=<?= filemtime(__DIR__ . '/../assets/css/findox.css') ?>" />
     <!-- site overrides (WhatsApp button, extra responsive rules) -->
     <link rel="stylesheet" href="assets/css/custom.css?v=<?= filemtime(__DIR__ . '/../assets/css/custom.css') ?>" />
     <link rel="stylesheet" href="assets/css/service-pages.css?v=<?= filemtime(__DIR__ . '/../assets/css/service-pages.css') ?>" />
@@ -107,10 +108,42 @@ $schema = [
 <div class="custom-cursor__cursor"></div>
 <div class="custom-cursor__cursor-two"></div>
 
-<div class="preloader">
-    <div class="preloader__image" style="background-image: url(assets/images/loader.png);"></div>
+<div class="preloader" id="sitePreloader">
+    <div class="preloader__card">
+        <div class="preloader__orbital">
+            <span class="preloader__ring-outer"></span>
+            <span class="preloader__ring-inner"></span>
+            <span class="preloader__core-dot"></span>
+        </div>
+        <div class="preloader__brand">
+            <span class="preloader__brand-title">Jolly &amp; Co.</span>
+            <span class="preloader__brand-sub">Chartered Accountants</span>
+        </div>
+        <div class="preloader__progress-track">
+            <div class="preloader__progress-bar"></div>
+        </div>
+    </div>
 </div>
 <!-- /.preloader -->
+<script>
+(function () {
+    var p = document.getElementById('sitePreloader');
+    if (!p) return;
+    function dismiss() {
+        if (!p || p.classList.contains('preloader--hidden')) return;
+        p.classList.add('preloader--hidden');
+        setTimeout(function () {
+            if (p && p.parentNode) p.parentNode.removeChild(p);
+        }, 220);
+    }
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(dismiss, 50);
+    } else {
+        document.addEventListener('DOMContentLoaded', function () { setTimeout(dismiss, 70); });
+    }
+    setTimeout(dismiss, 240); // Maximum ceiling: 240ms for instant loading
+})();
+</script>
 <div class="page-wrapper">
 
     <div class="header header--two">

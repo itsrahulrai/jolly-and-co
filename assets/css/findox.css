@@ -3254,12 +3254,13 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 .mobile-nav__content .main-menu__list li a.expanded {
-  color: var(--findox-base, #006654);
+  color: #ffffff;
 }
 
 .mobile-nav__content .main-menu__list li a button {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
   border: none;
   outline: none;
   color: var(--findox-white, #ffffff);
@@ -3268,19 +3269,18 @@ body.megamenu-popup-active .mobile-nav__content {
   justify-content: center;
   text-align: center;
   transform: rotate(-90deg);
-  background-color: var(--findox-base, #006654);
-  transition: transform 500ms ease;
+  background-color: rgba(255, 255, 255, 0.12);
+  transition: all 300ms ease;
 }
-.mobile-nav__content .main-menu__list li a button svg {
-  width: 1em;
-  height: 1em;
-  fill: currentColor;
+.mobile-nav__content .main-menu__list li a button svg,
+.mobile-nav__content .main-menu__list li a button i {
+  font-size: 14px;
 }
 
 .mobile-nav__content .main-menu__list li a button.expanded {
-  color: var(--findox-black4, #131111);
+  color: #ffffff;
   transform: rotate(0deg);
-  background-color: var(--findox-white, #ffffff);
+  background-color: #5bbd0f;
 }
 
 .mobile-nav__contact {

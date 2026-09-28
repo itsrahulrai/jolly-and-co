@@ -263,16 +263,17 @@
       let self = $(this);
       let toggleBtn = document.createElement("BUTTON");
       toggleBtn.setAttribute("aria-label", "dropdown toggler");
+      toggleBtn.setAttribute("type", "button");
       toggleBtn.innerHTML = "<i class='fa fa-angle-down'></i>";
       self.append(function () {
         return toggleBtn;
       });
-      self.find("button").on("click", function (e) {
+      self.on("click", function (e) {
         e.preventDefault();
-        let self = $(this);
+        let btn = self.find("button");
+        btn.toggleClass("expanded");
         self.toggleClass("expanded");
-        self.parent().toggleClass("expanded");
-        self.parent().parent().children("ul").slideToggle();
+        self.parent().children("ul").stop(true, true).slideToggle(300);
       });
     });
   }
@@ -778,7 +779,7 @@
   // window load event
   $(window).on("load", function () {
     if ($(".preloader").length) {
-      $(".preloader").fadeOut();
+      $(".preloader").fadeOut(150);
     }
     thmOwlInit();
     findoxSlickInit();

@@ -13,7 +13,7 @@ include __DIR__ . '/includes/slider.php';
 ?>
 
 
-<section class="about-three section-space">
+<section class="about-three section-space home-about">
     <div class="container">
         <div class="row gutter-y-40 align-items-center">
             <div class="col-xl-4 d-none d-xl-block" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
@@ -30,16 +30,16 @@ include __DIR__ . '/includes/slider.php';
                         <div class="sec-title">
                             <div class="sec-title__top" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
                                 <span class="sec-title__dot"></span>
-                                <p class="sec-title__tagline">About <?= e($site['name']) ?></p>
+                                <p class="sec-title__tagline">About Us</p>
                             </div>
                             <h2 class="sec-title__title" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" style="--title-color: #082e54">Your Trusted <span class="sec-title__highlight">Chartered Accountants</span> in Delhi.</h2>
                         </div>
-                        <p class="about-three__text" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">Based in Kalkaji, New Delhi, <?= e($site['full_name']) ?> helps individuals, professionals and businesses keep their finances accurate, compliant and tax-efficient. We combine sound technical knowledge with clear, timely communication.</p>
+                        <p class="about-three__text" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">Jolly &amp; Co. Chartered Accountants is a professional chartered accountant in Kalkaji, supporting individuals and businesses with clear, structured financial and tax solutions. Our services include income tax consultancy, GST return filing, TDS returns, tax audits, statutory audits, accounting services, company registration, and business tax consultancy across South Delhi.</p>
                         <div class="about-three__item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
                             <span class="about-three__item__icon"><i class="icon-financial-consultant"></i></span>
                             <h4 class="about-three__item__title">Accounting, Tax, Audit &amp; Compliance</h4>
                         </div>
-                        <p class="about-three__text" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">Whether you are filing a return, closing your books, setting up a new company or facing a notice, you get a single point of contact and practical advice you can act on.</p>
+                        <p class="about-three__text" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">With years of dedicated professional presence, we focus on timely assistance, practical guidance, and smooth compliance. Many clients appreciate our responsive approach and attention to detail. For dependable accounting and taxation support, connect with an accountant in Kalkaji and take a more organized approach to your financial requirements.</p>
                         <div class="about-three__button" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
                             <a href="about.php" class="findox-btn">
                                 <span class="findox-btn__text">About More</span>
@@ -49,7 +49,7 @@ include __DIR__ . '/includes/slider.php';
                     </div>
                     <div class="about-three__content__image" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="1300">
                         <img src="assets/images/about/about-3-2.jpg" alt="Client consultation" class="about-three__content__img">
-                        <img src="assets/images/shapes/about-badge-3-1.png" alt="" class="about-three__content__badge">
+                        <img src="assets/images/shapes/about-badge-4-1.png?v=<?= filemtime(__DIR__ . '/assets/images/shapes/about-badge-4-1.png') ?>" alt="5+ Years Experience" class="about-three__content__badge" width="195" height="195">
                     </div>
                 </div>
             </div>
@@ -361,10 +361,10 @@ include __DIR__ . '/includes/slider.php';
         <div class="sec-title sec-title--center" style="margin-bottom: 45px;">
             <div class="sec-title__top" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
                 <span class="sec-title__dot"></span>
-                <p class="sec-title__tagline">FAQ &amp; Blogs</p>
+                <p class="sec-title__tagline">FAQ <span class="d-none d-lg-inline">&amp; Blogs</span></p>
             </div>
             <h2 class="sec-title__title" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" style="--title-color: #082e54">
-                Frequently Asked Questions &amp; <span class="sec-title__highlight">Latest Blogs</span>
+                Frequently Asked Questions <span class="d-none d-lg-inline">&amp; <span class="sec-title__highlight">Latest Blogs</span></span>
             </h2>
         </div>
 
@@ -444,113 +444,136 @@ include __DIR__ . '/includes/slider.php';
                 </div>
             </div>
            <div class="col-lg-7">
-               <div class="faq-one__blogs">
+               <?php
+               $latestBlogs = [
+                   [
+                       'image'    => 'assets/images/blog/blog-2-1.jpg',
+                       'day'      => '22',
+                       'month'    => 'Apr',
+                       'category' => 'Finance',
+                       'title'    => 'Smart Financial Planning for Business Growth.',
+                       'url'      => 'blogs.php',
+                   ],
+                   [
+                       'image'    => 'assets/images/blog/blog-2-2.jpg',
+                       'day'      => '15',
+                       'month'    => 'Apr',
+                       'category' => 'Taxation',
+                       'title'    => 'Important Tax Tips Every Business Should Know.',
+                       'url'      => 'blogs.php',
+                   ],
+                   [
+                       'image'    => 'assets/images/blog/blog-2-3.jpg',
+                       'day'      => '08',
+                       'month'    => 'Apr',
+                       'category' => 'Accounting',
+                       'title'    => 'Why Accurate Accounting Matters for Your Business.',
+                       'url'      => 'blogs.php',
+                   ],
+               ];
+               ?>
 
-                <div class="blog-card-two">
-                    <div class="blog-card-two__image" style="background-image: url(assets/images/blog/blog-2-1.jpg?v=<?= filemtime(__DIR__ . '/assets/images/blog/blog-2-1.jpg') ?>)">
-                        <div class="blog-card-two__date">
-                            <span class="blog-card-two__date__day">22</span>
-                            <span class="blog-card-two__date__month">Apr</span>
-                        </div>
-                        <a href="blogs.php" class="blog-card-two__image__link">
-                            <span class="sr-only">Smart Financial Planning for Business Growth.</span>
-                        </a>
-                    </div>
+               <!-- Desktop View: Vertical stacked cards matching FAQ box height -->
+               <div class="faq-one__blogs d-none d-lg-flex">
+                   <?php foreach ($latestBlogs as $blog): ?>
+                   <div class="blog-card-two">
+                       <div class="blog-card-two__image" style="background-image: url(<?= e($blog['image']) ?>?v=<?= filemtime(__DIR__ . '/' . $blog['image']) ?>)">
+                           <div class="blog-card-two__date">
+                               <span class="blog-card-two__date__day"><?= e($blog['day']) ?></span>
+                               <span class="blog-card-two__date__month"><?= e($blog['month']) ?></span>
+                           </div>
+                           <a href="<?= e($blog['url']) ?>" class="blog-card-two__image__link">
+                               <span class="sr-only"><?= e($blog['title']) ?></span>
+                           </a>
+                       </div>
+                       <div class="blog-card-two__content">
+                           <a href="<?= e($blog['url']) ?>" class="blog-card-two__category"><?= e($blog['category']) ?></a>
+                           <ul class="blog-card-two__meta list-unstyled">
+                               <li>
+                                   <span class="blog-card-two__meta__icon"><i class="icon-user"></i></span>
+                                   <span>By: <a href="<?= e($blog['url']) ?>">Jolly &amp; Co</a></span>
+                               </li>
+                           </ul>
+                           <h3 class="blog-card-two__title">
+                               <a href="<?= e($blog['url']) ?>"><?= e($blog['title']) ?></a>
+                           </h3>
+                           <a href="<?= e($blog['url']) ?>" class="findox-btn findox-btn--base">
+                               <span class="findox-btn__text">Learn More</span>
+                               <span class="findox-btn__icon-box">
+                                   <span class="findox-btn__icon">
+                                       <i class="icon-arrow-right-up"></i>
+                                       <i class="icon-arrow-right-up"></i>
+                                   </span>
+                               </span>
+                           </a>
+                       </div>
+                   </div>
+                   <?php endforeach; ?>
+               </div>
 
-                    <div class="blog-card-two__content">
-                        <a href="blogs.php" class="blog-card-two__category">Finance</a>
-                        <ul class="blog-card-two__meta list-unstyled">
-                            <li>
-                                <span class="blog-card-two__meta__icon"><i class="icon-user"></i></span>
-                                <span>By: <a href="blogs.php">Jolly & Co</a></span>
-                            </li>
-                           
-                        </ul>
-                        <h3 class="blog-card-two__title">
-                            <a href="blogs.php">Smart Financial Planning for Business Growth.</a>
-                        </h3>
-                        <a href="blogs.php" class="findox-btn findox-btn--base">
-                            <span class="findox-btn__text">Learn More</span>
-                            <span class="findox-btn__icon-box">
-                                <span class="findox-btn__icon">
-                                    <i class="icon-arrow-right-up"></i>
-                                    <i class="icon-arrow-right-up"></i>
-                                </span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
+               <!-- Mobile View: Separate Section with Header & Swipeable Carousel -->
+               <div class="faq-one__blogs-mobile d-block d-lg-none">
+                   <div class="faq-one__blogs-mobile-header" data-aos="fade-up">
+                       <div class="sec-title">
+                           <div class="sec-title__top">
+                               <span class="sec-title__dot"></span>
+                               <p class="sec-title__tagline">Latest Blogs</p>
+                           </div>
+                           <h2 class="sec-title__title" style="--title-color: #082e54">
+                               Recent News &amp; <span class="sec-title__highlight">Articles</span>
+                           </h2>
+                       </div>
+                   </div>
 
-                <div class="blog-card-two">
-                    <div class="blog-card-two__image" style="background-image: url(assets/images/blog/blog-2-2.jpg?v=<?= filemtime(__DIR__ . '/assets/images/blog/blog-2-2.jpg') ?>)">
-                        <div class="blog-card-two__date">
-                            <span class="blog-card-two__date__day">15</span>
-                            <span class="blog-card-two__date__month">Apr</span>
-                        </div>
-                        <a href="blogs.php" class="blog-card-two__image__link">
-                            <span class="sr-only">Important Tax Tips Every Business Should Know.</span>
-                        </a>
-                    </div>
-
-                    <div class="blog-card-two__content">
-                        <a href="blogs.php" class="blog-card-two__category">Taxation</a>
-                        <ul class="blog-card-two__meta list-unstyled">
-                            <li>
-                                <span class="blog-card-two__meta__icon"><i class="icon-user"></i></span>
-                                <span>By: <a href="blogs.php">Jolly & Co</a></span>
-                            </li>
-                           
-                        </ul>
-                        <h3 class="blog-card-two__title">
-                            <a href="blogs.php">Important Tax Tips Every Business Should Know.</a>
-                        </h3>
-                        <a href="blogs.php" class="findox-btn findox-btn--base">
-                            <span class="findox-btn__text">Learn More</span>
-                            <span class="findox-btn__icon-box">
-                                <span class="findox-btn__icon">
-                                    <i class="icon-arrow-right-up"></i>
-                                    <i class="icon-arrow-right-up"></i>
-                                </span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="blog-card-two">
-                    <div class="blog-card-two__image" style="background-image: url(assets/images/blog/blog-2-3.jpg?v=<?= filemtime(__DIR__ . '/assets/images/blog/blog-2-3.jpg') ?>)">
-                        <div class="blog-card-two__date">
-                            <span class="blog-card-two__date__day">08</span>
-                            <span class="blog-card-two__date__month">Apr</span>
-                        </div>
-                        <a href="blogs.php" class="blog-card-two__image__link">
-                            <span class="sr-only">Why Accurate Accounting Matters for Your Business.</span>
-                        </a>
-                    </div>
-
-                    <div class="blog-card-two__content">
-                        <a href="blogs.php" class="blog-card-two__category">Accounting</a>
-                        <ul class="blog-card-two__meta list-unstyled">
-                            <li>
-                                <span class="blog-card-two__meta__icon"><i class="icon-user"></i></span>
-                                <span>By: <a href="blogs.php">Jolly & Co</a></span>
-                            </li>
-                           
-                        </ul>
-                        <h3 class="blog-card-two__title">
-                            <a href="blogs.php">Why Accurate Accounting Matters for Your Business.</a>
-                        </h3>
-                        <a href="blogs.php" class="findox-btn findox-btn--base">
-                            <span class="findox-btn__text">Learn More</span>
-                            <span class="findox-btn__icon-box">
-                                <span class="findox-btn__icon">
-                                    <i class="icon-arrow-right-up"></i>
-                                    <i class="icon-arrow-right-up"></i>
-                                </span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                   <div class="faq-one__blogs-carousel findox-owl__carousel owl-carousel owl-theme" data-owl-options='{
+                       "items": 1,
+                       "margin": 20,
+                       "loop": true,
+                       "autoplay": true,
+                       "autoplayTimeout": 5000,
+                       "smartSpeed": 700,
+                       "nav": false,
+                       "dots": true
+                   }'>
+                       <?php foreach ($latestBlogs as $blog): ?>
+                       <div class="item">
+                           <div class="blog-card-two">
+                               <div class="blog-card-two__image" style="background-image: url(<?= e($blog['image']) ?>?v=<?= filemtime(__DIR__ . '/' . $blog['image']) ?>)">
+                                   <div class="blog-card-two__date">
+                                       <span class="blog-card-two__date__day"><?= e($blog['day']) ?></span>
+                                       <span class="blog-card-two__date__month"><?= e($blog['month']) ?></span>
+                                   </div>
+                                   <a href="<?= e($blog['url']) ?>" class="blog-card-two__image__link">
+                                       <span class="sr-only"><?= e($blog['title']) ?></span>
+                                   </a>
+                               </div>
+                               <div class="blog-card-two__content">
+                                   <a href="<?= e($blog['url']) ?>" class="blog-card-two__category"><?= e($blog['category']) ?></a>
+                                   <ul class="blog-card-two__meta list-unstyled">
+                                       <li>
+                                           <span class="blog-card-two__meta__icon"><i class="icon-user"></i></span>
+                                           <span>By: <a href="<?= e($blog['url']) ?>">Jolly &amp; Co</a></span>
+                                       </li>
+                                   </ul>
+                                   <h3 class="blog-card-two__title">
+                                       <a href="<?= e($blog['url']) ?>"><?= e($blog['title']) ?></a>
+                                   </h3>
+                                   <a href="<?= e($blog['url']) ?>" class="findox-btn findox-btn--base">
+                                       <span class="findox-btn__text">Learn More</span>
+                                       <span class="findox-btn__icon-box">
+                                           <span class="findox-btn__icon">
+                                               <i class="icon-arrow-right-up"></i>
+                                               <i class="icon-arrow-right-up"></i>
+                                           </span>
+                                       </span>
+                                   </a>
+                               </div>
+                           </div>
+                       </div>
+                       <?php endforeach; ?>
+                   </div>
+               </div>
+           </div>
         </div>
         </div>
     </div>

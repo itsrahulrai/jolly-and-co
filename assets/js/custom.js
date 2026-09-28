@@ -29,19 +29,18 @@
       var phone = f.phone.value.trim();
       var email = f.email ? f.email.value.trim() : "";
       var service = f.service ? f.service.value.trim() : "";
-      var message = f.message.value.trim();
+      var message = f.message ? f.message.value.trim() : "";
 
-      [f.name, f.phone, f.message].forEach(function (el) { el.classList.remove("is-invalid"); });
+      [f.name, f.phone].forEach(function (el) { el.classList.remove("is-invalid"); });
 
       var bad = [];
       if (!name) bad.push(f.name);
       if (phone.replace(/\D/g, "").length < 7) bad.push(f.phone);
-      if (!message) bad.push(f.message);
       if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) show("Please enter a valid email address.", false);
 
       if (bad.length) {
         bad.forEach(function (el) { el.classList.add("is-invalid"); });
-        show("Please fill in your name, a valid phone number and your message.", false);
+        show("Please fill in your name and a valid phone number.", false);
         bad[0].focus();
         return;
       }
@@ -55,7 +54,7 @@
       ];
       if (email) lines.push("*Email:* " + email);
       if (service) lines.push("*Service:* " + service);
-      lines.push("*Message:* " + message);
+      if (message) lines.push("*Message:* " + message);
 
       var url = "https://wa.me/" + number + "?text=" + encodeURIComponent(lines.join("\n"));
 
@@ -111,4 +110,14 @@
       }
     });
   });
+
+  // Ensure mobile blogs carousel refreshes on resize & orientation change
+  if (window.jQuery) {
+    jQuery(window).on('resize orientationchange', function() {
+      var $car = jQuery('.faq-one__blogs-carousel');
+      if ($car.length && $car.hasClass('owl-loaded')) {
+        $car.trigger('refresh.owl.carousel');
+      }
+    });
+  }
 })();

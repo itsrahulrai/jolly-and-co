@@ -230,7 +230,7 @@ $waHello = whatsapp_link('Hello ' . $site['name'] . ', I would like to know more
 <script src="assets/vendors/gsap/splittext.min.js"></script>
 <script src="assets/vendors/gsap/findox-split.js"></script>
 <!-- template js -->
-<script src="assets/js/findox.js"></script>
+<script src="assets/js/findox.js?v=<?= filemtime(__DIR__ . '/../assets/js/findox.js') ?>"></script>
 <!-- site js (WhatsApp form & sticky nav) -->
 <script src="assets/js/custom.js?v=<?= filemtime(__DIR__ . '/../assets/js/custom.js') ?>"></script>
 <?php if (!empty($extra_js)): ?>
