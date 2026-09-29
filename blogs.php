@@ -10,29 +10,7 @@ $seo = [
 ];
 $pageHeading = 'Blogs & Insights';
 
-$posts = [
-    [
-        'title'    => 'Key GST Compliance Deadlines & Updates for Indian Businesses',
-        'category' => 'GST & Indirect Tax',
-        'date'     => 'September 15, 2026',
-        'image'    => 'assets/images/blog/blog-1-1.jpg',
-        'excerpt'  => 'A complete breakdown of monthly and quarterly GST return filing dates, recent notification updates, and common pitfalls to avoid.',
-    ],
-    [
-        'title'    => 'Income Tax Return (ITR) Filing Guide for Salaried & Professionals',
-        'category' => 'Income Tax',
-        'date'     => 'August 28, 2026',
-        'image'    => 'assets/images/blog/blog-1-2.jpg',
-        'excerpt'  => 'Everything you need to know about choosing between the old vs new tax regime, claiming deductions under 80C/80D, and timely filing.',
-    ],
-    [
-        'title'    => 'Understanding Statutory Audit: What Every Business Owner Should Expect',
-        'category' => 'Audit & Assurance',
-        'date'     => 'July 24, 2026',
-        'image'    => 'assets/images/blog/blog-1-4.jpg',
-        'excerpt'  => 'Demystifying the audit process, preparation of financial statements, internal financial controls, and working smoothly with your auditor.',
-    ],
-];
+$posts = $blogPosts;
 
 ob_start();
 ?>

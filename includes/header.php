@@ -32,7 +32,6 @@ $schema = [
     'url'         => $base . '/',
     'image'       => $base . '/' . $site['og_image'],
     'telephone'   => $site['phone_link'],
-    'email'       => $site['email'],
     'address'     => [
         '@type'           => 'PostalAddress',
         'streetAddress'   => $site['address'],
@@ -155,10 +154,12 @@ $schema = [
                             <span class="topbar__info__icon"><i class="fas fa-phone-alt"></i></span>
                             <span><a href="tel:<?= e($site['phone_link']) ?>"><?= e($site['phone']) ?></a></span>
                         </li>
+                        <?php if (!empty($site['email'])): ?>
                         <li class="topbar__email">
                             <span class="topbar__info__icon"><i class="fas fa-envelope"></i></span>
                             <span><a href="mailto:<?= e($site['email']) ?>"><?= e($site['email']) ?></a></span>
                         </li>
+                        <?php endif; ?>
                     </ul>
                     <div class="topbar__right">
                         <ul class="topbar__info list-unstyled">

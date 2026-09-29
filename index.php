@@ -445,39 +445,14 @@ include __DIR__ . '/includes/slider.php';
             </div>
            <div class="col-lg-7">
                <?php
-               $latestBlogs = [
-                   [
-                       'image'    => 'assets/images/blog/blog-2-1.jpg',
-                       'day'      => '22',
-                       'month'    => 'Apr',
-                       'category' => 'Finance',
-                       'title'    => 'Smart Financial Planning for Business Growth.',
-                       'url'      => 'blogs.php',
-                   ],
-                   [
-                       'image'    => 'assets/images/blog/blog-2-2.jpg',
-                       'day'      => '15',
-                       'month'    => 'Apr',
-                       'category' => 'Taxation',
-                       'title'    => 'Important Tax Tips Every Business Should Know.',
-                       'url'      => 'blogs.php',
-                   ],
-                   [
-                       'image'    => 'assets/images/blog/blog-2-3.jpg',
-                       'day'      => '08',
-                       'month'    => 'Apr',
-                       'category' => 'Accounting',
-                       'title'    => 'Why Accurate Accounting Matters for Your Business.',
-                       'url'      => 'blogs.php',
-                   ],
-               ];
+               $latestBlogs = $blogPosts;
                ?>
 
                <!-- Desktop View: Vertical stacked cards matching FAQ box height -->
                <div class="faq-one__blogs d-none d-lg-flex">
                    <?php foreach ($latestBlogs as $blog): ?>
                    <div class="blog-card-two">
-                       <div class="blog-card-two__image" style="background-image: url(<?= e($blog['image']) ?>?v=<?= filemtime(__DIR__ . '/' . $blog['image']) ?>)">
+                       <div class="blog-card-two__image" style="background-image: url(<?= e($blog['image']) ?>?v=<?= file_exists(__DIR__ . '/' . $blog['image']) ? filemtime(__DIR__ . '/' . $blog['image']) : time() ?>)">
                            <div class="blog-card-two__date">
                                <span class="blog-card-two__date__day"><?= e($blog['day']) ?></span>
                                <span class="blog-card-two__date__month"><?= e($blog['month']) ?></span>
@@ -538,7 +513,7 @@ include __DIR__ . '/includes/slider.php';
                        <?php foreach ($latestBlogs as $blog): ?>
                        <div class="item">
                            <div class="blog-card-two">
-                               <div class="blog-card-two__image" style="background-image: url(<?= e($blog['image']) ?>?v=<?= filemtime(__DIR__ . '/' . $blog['image']) ?>)">
+                               <div class="blog-card-two__image" style="background-image: url(<?= e($blog['image']) ?>?v=<?= file_exists(__DIR__ . '/' . $blog['image']) ? filemtime(__DIR__ . '/' . $blog['image']) : time() ?>)">
                                    <div class="blog-card-two__date">
                                        <span class="blog-card-two__date__day"><?= e($blog['day']) ?></span>
                                        <span class="blog-card-two__date__month"><?= e($blog['month']) ?></span>

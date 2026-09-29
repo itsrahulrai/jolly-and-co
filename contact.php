@@ -63,6 +63,7 @@ ob_start();
                             </div>
                         </a>
 
+                        <?php if (!empty($site['email'])): ?>
                         <!-- 2. Email -->
                         <a href="mailto:<?= e($site['email']) ?>" class="modern-info-card">
                             <div class="modern-info-card__left">
@@ -78,6 +79,23 @@ ob_start();
                                 <i class="fas fa-chevron-right"></i>
                             </div>
                         </a>
+                        <?php else: ?>
+                        <!-- 2. WhatsApp Consultation -->
+                        <a href="<?= e(whatsapp_link('Hello ' . $site['name'] . ', I would like to consult with you.')) ?>" target="_blank" rel="noopener" class="modern-info-card">
+                            <div class="modern-info-card__left">
+                                <div class="modern-info-card__icon" style="background: rgba(37, 211, 102, 0.12); color: #25d366;">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="modern-info-card__details">
+                                    <span class="modern-info-card__title">Chat on WhatsApp</span>
+                                    <span class="modern-info-card__value">Instant CA Support &amp; Enquiries</span>
+                                </div>
+                            </div>
+                            <div class="modern-info-card__arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </a>
+                        <?php endif; ?>
 
                         <!-- 3. Address / Office -->
                         <a href="<?= e(map_link()) ?>" target="_blank" rel="noopener" class="modern-info-card">

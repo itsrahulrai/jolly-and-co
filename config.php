@@ -14,7 +14,7 @@ $site = [
     'phone'      => '+91 9999830077',
     'phone_link' => '+919999830077',
     'whatsapp'   => '919999830077',                 // country code + number, no "+" or spaces
-    'email'      => 'info@jollyandco.in',           // TODO: replace with your real email
+    'email'      => '',           // TODO: replace with your real email
     'address'    => 'A-8/61, Kalkaji Extension, Block A 8, Kalkaji Extension, Kalkaji, New Delhi, Delhi 110019',
     'address_short' => 'Kalkaji Extension, New Delhi 110019',
     'map_embed' => 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.455324602257!2d77.2614645!3d28.526030799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce15dc0000079%3A0xefa40c982228c00c!2sJolly%20%26%20Co.%20Chartered%20Accountants!5e0!3m2!1sen!2sin!4v1790410154688!5m2!1sen!2sin',
@@ -99,6 +99,40 @@ $services = [
         'image' => 'assets/images/services/service-1-6.jpg',
         'short' => 'Company, LLP and proprietorship set-up with PAN, GST, MSME/Udyam and Startup India support.',
         'points'=> ['Private Limited / LLP / OPC', 'GST, MSME & Startup India', 'Trademark & other registrations'],
+    ],
+];
+
+/** Blog Posts — shared across home page and blogs page */
+$blogPosts = [
+    [
+        'title'    => 'Key GST Compliance Deadlines & Updates for Indian Businesses',
+        'category' => 'GST & Indirect Tax',
+        'date'     => 'September 15, 2026',
+        'day'      => '15',
+        'month'    => 'Sep',
+        'image'    => 'assets/images/blog/blog-1-1.jpg',
+        'excerpt'  => 'A complete breakdown of monthly and quarterly GST return filing dates, recent notification updates, and common pitfalls to avoid.',
+        'url'      => 'blogs.php',
+    ],
+    [
+        'title'    => 'Income Tax Return (ITR) Filing Guide for Salaried & Professionals',
+        'category' => 'Income Tax',
+        'date'     => 'August 28, 2026',
+        'day'      => '28',
+        'month'    => 'Aug',
+        'image'    => 'assets/images/blog/blog-1-2.jpg',
+        'excerpt'  => 'Everything you need to know about choosing between the old vs new tax regime, claiming deductions under 80C/80D, and timely filing.',
+        'url'      => 'blogs.php',
+    ],
+    [
+        'title'    => 'Understanding Statutory Audit: What Every Business Owner Should Expect',
+        'category' => 'Audit & Assurance',
+        'date'     => 'July 24, 2026',
+        'day'      => '24',
+        'month'    => 'Jul',
+        'image'    => 'assets/images/blog/blog-1-4.jpg',
+        'excerpt'  => 'Demystifying the audit process, preparation of financial statements, internal financial controls, and working smoothly with your auditor.',
+        'url'      => 'blogs.php',
     ],
 ];
 

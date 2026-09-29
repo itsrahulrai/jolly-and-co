@@ -127,12 +127,14 @@ $waHello = whatsapp_link('Hello ' . $site['name'] . ', I would like to know more
                                             <a href="tel:<?= e($site['phone_link']) ?>"><?= e($site['phone']) ?></a>
                                         </div>
                                     </li>
+                                    <?php if (!empty($site['email'])): ?>
                                     <li>
                                         <div class="footer-contact-list__icon"><i class="fas fa-envelope"></i></div>
                                         <div class="footer-contact-list__info">
                                             <a href="mailto:<?= e($site['email']) ?>"><?= e($site['email']) ?></a>
                                         </div>
                                     </li>
+                                    <?php endif; ?>
                                     <li>
                                         <div class="footer-contact-list__icon"><i class="far fa-clock"></i></div>
                                         <div class="footer-contact-list__info">
@@ -182,10 +184,12 @@ $waHello = whatsapp_link('Hello ' . $site['name'] . ', I would like to know more
         </div>
         <div class="mobile-nav__container"></div>
         <ul class="mobile-nav__contact list-unstyled">
+            <?php if (!empty($site['email'])): ?>
             <li>
                 <span class="mobile-nav__contact__icon"><i class="fa fa-envelope"></i></span>
                 <a href="mailto:<?= e($site['email']) ?>"><?= e($site['email']) ?></a>
             </li>
+            <?php endif; ?>
             <li>
                 <span class="mobile-nav__contact__icon"><i class="fa fa-phone-alt"></i></span>
                 <a href="tel:<?= e($site['phone_link']) ?>"><?= e($site['phone']) ?></a>
@@ -196,15 +200,18 @@ $waHello = whatsapp_link('Hello ' . $site['name'] . ', I would like to know more
 </div>
 
 
-<!-- Floating WhatsApp button (number comes from config.php) -->
-<a href="<?= e($waHello) ?>" class="wa-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+<!-- Floating Quick Action: WhatsApp (Bottom Left - Icon Only) -->
+<a href="<?= e($waHello) ?>" class="wa-float" target="_blank" rel="noopener" aria-label="Chat with Jolly &amp; Co. on WhatsApp">
+    <span class="wa-float__badge"></span>
     <i class="fab fa-whatsapp"></i>
 </a>
 
-<a href="#" data-target="html" class="scroll-to-target scroll-to-top">
-    <span class="scroll-to-top__text">back top</span>
-    <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
+<!-- Floating Quick Action: Direct Call (Bottom Right - Icon Only) -->
+<a href="tel:<?= e($site['phone_link']) ?>" class="call-float" aria-label="Call Jolly &amp; Co. Directly">
+    <i class="fas fa-phone-alt"></i>
 </a>
+
+
 
 <script src="assets/vendors/jquery/jquery-3.7.1.min.js"></script>
 <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
